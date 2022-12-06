@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E70E4E481885637200070255 /* CRCoinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E70E4E471885637200070255 /* CRCoinCell.m */; };
+		E70E4E4B188567B200070255 /* CRData.m in Sources */ = {isa = PBXBuildFile; fileRef = E70E4E4A188567B200070255 /* CRData.m */; };
+		E7185FE323918952009131AF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7185FE223918952009131AF /* Launch Screen.storyboard */; };
+		E728C1DC1887C41800D5078E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E728C1DB1887C41800D5078E /* Images.xcassets */; };
+		E753A0721AB07295009F0055 /* CRStatisticController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7074D581AB04C8B0053C8F2 /* CRStatisticController.m */; };
+		E753A07C1AB0D197009F0055 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E753A0751AB0D197009F0055 /* Accelerate.framework */; };
+		E7565221193626B300B9E9F2 /* MxMovingPlaceholderTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E7565220193626B300B9E9F2 /* MxMovingPlaceholderTextField.m */; };
+		E7581A871ADC331000539715 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7581A861ADC331000539715 /* MessageUI.framework */; };
+		E7581A8A1ADD791500539715 /* CRInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E7581A891ADD791500539715 /* CRInfo.m */; };
+		E75A37A91D8AB57400B8CC57 /* CRDeliveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75A37A81D8AB57400B8CC57 /* CRDeliveryController.m */; };
+		E75E440718AA11E500569966 /* CRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75E440618AA11E500569966 /* CRViewController.m */; };
+		E762863618B1F193006F91D5 /* CRLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E762863518B1F193006F91D5 /* CRLeftViewController.m */; };
+		E765EAB018853A7000801426 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E765EAAF18853A7000801426 /* Foundation.framework */; };
+		E765EAB218853A7000801426 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E765EAB118853A7000801426 /* CoreGraphics.framework */; };
+		E765EAB418853A7000801426 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E765EAB318853A7000801426 /* UIKit.framework */; };
+		E765EABA18853A7000801426 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E765EAB818853A7000801426 /* InfoPlist.strings */; };
+		E765EABC18853A7000801426 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E765EABB18853A7000801426 /* main.m */; };
+		E765EAC018853A7000801426 /* CRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E765EABF18853A7000801426 /* CRAppDelegate.m */; };
+		E765EAC318853A7000801426 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E765EAC118853A7000801426 /* Main_iPhone.storyboard */; };
+		E765EAC918853A7000801426 /* CRMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E765EAC818853A7000801426 /* CRMasterViewController.m */; };
+		E765EACC18853A7000801426 /* CRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E765EACB18853A7000801426 /* CRDetailViewController.m */; };
+		E769FE7B207E2F05006CCA84 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E769FE7A207E2F05006CCA84 /* CoreTelephony.framework */; };
+		E769FE7D207E2F15006CCA84 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E769FE7C207E2F15006CCA84 /* CoreLocation.framework */; };
+		E769FE7F207E2F30006CCA84 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E769FE7E207E2F30006CCA84 /* AdSupport.framework */; };
+		E769FE81207E3D25006CCA84 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E769FE80207E3D25006CCA84 /* Security.framework */; };
+		E769FE83207E3D46006CCA84 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E769FE82207E3D46006CCA84 /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E76A92801B1A33FA00B5EB47 /* DropDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = E76A927F1B1A33FA00B5EB47 /* DropDownView.m */; };
+		E76CFF34197FE3A200987916 /* CRModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76CFF33197FE3A200987916 /* CRModalController.m */; };
+		E77DD7121DE9B1390070B6D5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77DD7111DE9B1390070B6D5 /* MediaPlayer.framework */; };
+		E7869B5A1DE9C11300C32F3D /* AppledocSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7869B441DE9C11300C32F3D /* AppledocSettings.plist */; };
+		E7869B5B1DE9C11300C32F3D /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7869B451DE9C11300C32F3D /* Configuration.plist */; };
+		E7869B5D1DE9C11300C32F3D /* XCDYouTubeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E7869B481DE9C11300C32F3D /* XCDYouTubeClient.m */; };
+		E7869B5E1DE9C11300C32F3D /* XCDYouTubeLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E7869B4C1DE9C11300C32F3D /* XCDYouTubeLogger.m */; };
+		E7869B5F1DE9C11300C32F3D /* XCDYouTubePlayerScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E7869B501DE9C11300C32F3D /* XCDYouTubePlayerScript.m */; };
+		E7869B601DE9C11300C32F3D /* XCDYouTubeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = E7869B521DE9C11300C32F3D /* XCDYouTubeVideo.m */; };
+		E7869B611DE9C11300C32F3D /* XCDYouTubeVideoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E7869B551DE9C11300C32F3D /* XCDYouTubeVideoOperation.m */; };
+		E7869B621DE9C11300C32F3D /* XCDYouTubeVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7869B571DE9C11300C32F3D /* XCDYouTubeVideoPlayerViewController.m */; };
+		E7869B631DE9C11300C32F3D /* XCDYouTubeVideoWebpage.m in Sources */ = {isa = PBXBuildFile; fileRef = E7869B591DE9C11300C32F3D /* XCDYouTubeVideoWebpage.m */; };
+		E79295D51B89D2FA00748E5F /* CRZakazController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79295D41B89D2FA00748E5F /* CRZakazController.m */; };
+		E7AC3D1D1DA180F3006783E0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AC3D1C1DA180F3006783E0 /* CFNetwork.framework */; };
+		E7AC3D281DA18E5C006783E0 /* Base64Transcoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AC3D1F1DA18E5C006783E0 /* Base64Transcoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E7AC3D291DA18E5C006783E0 /* HSK_CFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AC3D211DA18E5C006783E0 /* HSK_CFUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E7AC3D2A1DA18E5C006783E0 /* NSData+Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AC3D231DA18E5C006783E0 /* NSData+Base64Additions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E7AC3D2B1DA18E5C006783E0 /* NSStream+SKPSMTPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AC3D251DA18E5C006783E0 /* NSStream+SKPSMTPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E7AC3D2C1DA18E5C006783E0 /* SKPSMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AC3D271DA18E5C006783E0 /* SKPSMTPMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E7C2CCD01E225C3A006507B2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E753A0761AB0D197009F0055 /* AssetsLibrary.framework */; };
+		E7CD180D1BC4451D00A30457 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CD180F1BC4451D00A30457 /* Main_iPad.storyboard */; };
+		E7DB20BA18C323DA0000CF71 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DB20B818C323DA0000CF71 /* SWRevealViewController.m */; };
+		E7DDB0571897F98E00842C06 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7DDB0551897F98E00842C06 /* Model.xcdatamodeld */; };
+		E7DE4EF322C51F8C006D179F /* ATAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DE4EF222C51F8C006D179F /* ATAppUpdater.m */; };
+		E7E9CA051B6EA4950034114B /* CRShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E9CA041B6EA4950034114B /* CRShopController.m */; };
+		E7EF2B8D1BC2F55800678830 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EF2B8C1BC2F55800678830 /* CoreData.framework */; };
+		E7EF2B8E1BC2F56E00678830 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E737FBAA1B9F4633004CF597 /* SystemConfiguration.framework */; };
+		E7F17BE91BB8402F00E3632C /* CRZakazCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F17BE81BB8402F00E3632C /* CRZakazCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E7D99F541BAEBE3600270228 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E7074D571AB04C8B0053C8F2 /* CRStatisticController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRStatisticController.h; sourceTree = "<group>"; };
+		E7074D581AB04C8B0053C8F2 /* CRStatisticController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRStatisticController.m; sourceTree = "<group>"; };
+		E70E4E461885637200070255 /* CRCoinCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCoinCell.h; sourceTree = "<group>"; };
+		E70E4E471885637200070255 /* CRCoinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCoinCell.m; sourceTree = "<group>"; };
+		E70E4E49188567B200070255 /* CRData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRData.h; sourceTree = "<group>"; };
+		E70E4E4A188567B200070255 /* CRData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRData.m; sourceTree = "<group>"; };
+		E7185FE223918952009131AF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E728C1DB1887C41800D5078E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E72D601C1A029C7A00903549 /* Russian Coins.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Russian Coins.entitlements"; sourceTree = SOURCE_ROOT; };
+		E737FBAA1B9F4633004CF597 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E753A0751AB0D197009F0055 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E753A0761AB0D197009F0055 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		E756521F193626B300B9E9F2 /* MxMovingPlaceholderTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MxMovingPlaceholderTextField.h; sourceTree = "<group>"; };
+		E7565220193626B300B9E9F2 /* MxMovingPlaceholderTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MxMovingPlaceholderTextField.m; sourceTree = "<group>"; };
+		E7581A861ADC331000539715 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E7581A881ADD791500539715 /* CRInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRInfo.h; sourceTree = "<group>"; };
+		E7581A891ADD791500539715 /* CRInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRInfo.m; sourceTree = "<group>"; };
+		E75A05CD1B7BBF210049A89A /* RSSParser */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RSSParser; path = "Монеты России/RSSParser"; sourceTree = "<group>"; };
+		E75A37A71D8AB57400B8CC57 /* CRDeliveryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDeliveryController.h; sourceTree = "<group>"; };
+		E75A37A81D8AB57400B8CC57 /* CRDeliveryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDeliveryController.m; sourceTree = "<group>"; };
+		E75E440518AA11E500569966 /* CRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRViewController.h; sourceTree = "<group>"; };
+		E75E440618AA11E500569966 /* CRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRViewController.m; sourceTree = "<group>"; };
+		E762863418B1F193006F91D5 /* CRLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLeftViewController.h; sourceTree = "<group>"; };
+		E762863518B1F193006F91D5 /* CRLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLeftViewController.m; sourceTree = "<group>"; };
+		E765EAAC18853A7000801426 /* Russian Coins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Russian Coins.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E765EAAF18853A7000801426 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E765EAB118853A7000801426 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E765EAB318853A7000801426 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E765EAB718853A7000801426 /* Russian Coins-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Russian Coins-Info.plist"; sourceTree = "<group>"; };
+		E765EABB18853A7000801426 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E765EABD18853A7000801426 /* Russian Coins-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Russian Coins-Prefix.pch"; sourceTree = "<group>"; };
+		E765EABE18853A7000801426 /* CRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAppDelegate.h; sourceTree = "<group>"; };
+		E765EABF18853A7000801426 /* CRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAppDelegate.m; sourceTree = "<group>"; };
+		E765EAC718853A7000801426 /* CRMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMasterViewController.h; sourceTree = "<group>"; };
+		E765EAC818853A7000801426 /* CRMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMasterViewController.m; sourceTree = "<group>"; };
+		E765EACA18853A7000801426 /* CRDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRDetailViewController.h; sourceTree = "<group>"; };
+		E765EACB18853A7000801426 /* CRDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRDetailViewController.m; sourceTree = "<group>"; };
+		E765EADC18853A7000801426 /* Russian CoinsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Russian CoinsTests-Info.plist"; sourceTree = "<group>"; };
+		E765EAE018853A7000801426 /* _____________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____________Tests.m"; sourceTree = "<group>"; };
+		E769FE7A207E2F05006CCA84 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E769FE7C207E2F15006CCA84 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E769FE7E207E2F30006CCA84 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E769FE80207E3D25006CCA84 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E769FE82207E3D46006CCA84 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		E76A927E1B1A33FA00B5EB47 /* DropDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownView.h; sourceTree = "<group>"; };
+		E76A927F1B1A33FA00B5EB47 /* DropDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownView.m; sourceTree = "<group>"; };
+		E76CFF32197FE3A200987916 /* CRModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRModalController.h; sourceTree = "<group>"; };
+		E76CFF33197FE3A200987916 /* CRModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRModalController.m; sourceTree = "<group>"; };
+		E77DD7111DE9B1390070B6D5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E7869B441DE9C11300C32F3D /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
+		E7869B451DE9C11300C32F3D /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		E7869B461DE9C11300C32F3D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7869B471DE9C11300C32F3D /* XCDYouTubeClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDYouTubeClient.h; sourceTree = "<group>"; };
+		E7869B481DE9C11300C32F3D /* XCDYouTubeClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDYouTubeClient.m; sourceTree = "<group>"; };
+		E7869B491DE9C11300C32F3D /* XCDYouTubeError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDYouTubeError.h; sourceTree = "<group>"; };
+		E7869B4A1DE9C11300C32F3D /* XCDYouTubeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDYouTubeKit.h; sourceTree = "<group>"; };
+		E7869B4B1DE9C11300C32F3D /* XCDYouTubeLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDYouTubeLogger.h; sourceTree = "<group>"; };
+		E7869B4C1DE9C11300C32F3D /* XCDYouTubeLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDYouTubeLogger.m; sourceTree = "<group>"; };
+		E7869B4D1DE9C11300C32F3D /* XCDYouTubeLogger+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCDYouTubeLogger+Private.h"; sourceTree = "<group>"; };
+		E7869B4E1DE9C11300C32F3D /* XCDYouTubeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDYouTubeOperation.h; sourceTree = "<group>"; };
+		E7869B4F1DE9C11300C32F3D /* XCDYouTubePlayerScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDYouTubePlayerScript.h; sourceTree = "<group>"; };
+		E7869B501DE9C11300C32F3D /* XCDYouTubePlayerScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDYouTubePlayerScript.m; sourceTree = "<group>"; };
+		E7869B511DE9C11300C32F3D /* XCDYouTubeVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDYouTubeVideo.h; sourceTree = "<group>"; };
+		E7869B521DE9C11300C32F3D /* XCDYouTubeVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDYouTubeVideo.m; sourceTree = "<group>"; };
+		E7869B531DE9C11300C32F3D /* XCDYouTubeVideo+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCDYouTubeVideo+Private.h"; sourceTree = "<group>"; };
+		E7869B541DE9C11300C32F3D /* XCDYouTubeVideoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDYouTubeVideoOperation.h; sourceTree = "<group>"; };
+		E7869B551DE9C11300C32F3D /* XCDYouTubeVideoOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDYouTubeVideoOperation.m; sourceTree = "<group>"; };
+		E7869B561DE9C11300C32F3D /* XCDYouTubeVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDYouTubeVideoPlayerViewController.h; sourceTree = "<group>"; };
+		E7869B571DE9C11300C32F3D /* XCDYouTubeVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDYouTubeVideoPlayerViewController.m; sourceTree = "<group>"; };
+		E7869B581DE9C11300C32F3D /* XCDYouTubeVideoWebpage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDYouTubeVideoWebpage.h; sourceTree = "<group>"; };
+		E7869B591DE9C11300C32F3D /* XCDYouTubeVideoWebpage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDYouTubeVideoWebpage.m; sourceTree = "<group>"; };
+		E79295D31B89D2FA00748E5F /* CRZakazController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRZakazController.h; sourceTree = "<group>"; };
+		E79295D41B89D2FA00748E5F /* CRZakazController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRZakazController.m; sourceTree = "<group>"; };
+		E7AC3D1C1DA180F3006783E0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E7AC3D1E1DA18E5C006783E0 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		E7AC3D1F1DA18E5C006783E0 /* Base64Transcoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Transcoder.m; sourceTree = "<group>"; };
+		E7AC3D201DA18E5C006783E0 /* HSK_CFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSK_CFUtilities.h; sourceTree = "<group>"; };
+		E7AC3D211DA18E5C006783E0 /* HSK_CFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSK_CFUtilities.m; sourceTree = "<group>"; };
+		E7AC3D221DA18E5C006783E0 /* NSData+Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Additions.h"; sourceTree = "<group>"; };
+		E7AC3D231DA18E5C006783E0 /* NSData+Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64Additions.m"; sourceTree = "<group>"; };
+		E7AC3D241DA18E5C006783E0 /* NSStream+SKPSMTPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+SKPSMTPExtensions.h"; sourceTree = "<group>"; };
+		E7AC3D251DA18E5C006783E0 /* NSStream+SKPSMTPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStream+SKPSMTPExtensions.m"; sourceTree = "<group>"; };
+		E7AC3D261DA18E5C006783E0 /* SKPSMTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPSMTPMessage.h; sourceTree = "<group>"; };
+		E7AC3D271DA18E5C006783E0 /* SKPSMTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPSMTPMessage.m; sourceTree = "<group>"; };
+		E7C951491ABF694000F6D8CC /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		E7C9514B1ABF694000F6D8CC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7C9514C1ABF694000F6D8CC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7CD180E1BC4451D00A30457 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		E7DB20B818C323DA0000CF71 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E7DB20B918C323DA0000CF71 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E7DDB0561897F98E00842C06 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		E7DE4EF122C51F8B006D179F /* ATAppUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAppUpdater.h; sourceTree = "<group>"; };
+		E7DE4EF222C51F8C006D179F /* ATAppUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAppUpdater.m; sourceTree = "<group>"; };
+		E7E9CA031B6EA4950034114B /* CRShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRShopController.h; sourceTree = "<group>"; };
+		E7E9CA041B6EA4950034114B /* CRShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRShopController.m; sourceTree = "<group>"; };
+		E7EF2B8C1BC2F55800678830 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E7F17BE71BB8402F00E3632C /* CRZakazCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRZakazCell.h; sourceTree = "<group>"; };
+		E7F17BE81BB8402F00E3632C /* CRZakazCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRZakazCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E765EAA918853A7000801426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E769FE83207E3D46006CCA84 /* SafariServices.framework in Frameworks */,
+				E769FE81207E3D25006CCA84 /* Security.framework in Frameworks */,
+				E769FE7F207E2F30006CCA84 /* AdSupport.framework in Frameworks */,
+				E769FE7D207E2F15006CCA84 /* CoreLocation.framework in Frameworks */,
+				E769FE7B207E2F05006CCA84 /* CoreTelephony.framework in Frameworks */,
+				E7C2CCD01E225C3A006507B2 /* AssetsLibrary.framework in Frameworks */,
+				E77DD7121DE9B1390070B6D5 /* MediaPlayer.framework in Frameworks */,
+				E7AC3D1D1DA180F3006783E0 /* CFNetwork.framework in Frameworks */,
+				E7EF2B8E1BC2F56E00678830 /* SystemConfiguration.framework in Frameworks */,
+				E7EF2B8D1BC2F55800678830 /* CoreData.framework in Frameworks */,
+				E7581A871ADC331000539715 /* MessageUI.framework in Frameworks */,
+				E753A07C1AB0D197009F0055 /* Accelerate.framework in Frameworks */,
+				E765EAB218853A7000801426 /* CoreGraphics.framework in Frameworks */,
+				E765EAB418853A7000801426 /* UIKit.framework in Frameworks */,
+				E765EAB018853A7000801426 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E765EAA318853A6F00801426 = {
+			isa = PBXGroup;
+			children = (
+				E765EAB518853A7000801426 /* Russian Coins */,
+				E765EADA18853A7000801426 /* Russian CoinsTests */,
+				E765EAAD18853A7000801426 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E765EAAD18853A7000801426 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E765EAAC18853A7000801426 /* Russian Coins.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E765EAAE18853A7000801426 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E769FE82207E3D46006CCA84 /* SafariServices.framework */,
+				E769FE80207E3D25006CCA84 /* Security.framework */,
+				E769FE7E207E2F30006CCA84 /* AdSupport.framework */,
+				E769FE7C207E2F15006CCA84 /* CoreLocation.framework */,
+				E769FE7A207E2F05006CCA84 /* CoreTelephony.framework */,
+				E77DD7111DE9B1390070B6D5 /* MediaPlayer.framework */,
+				E7AC3D1C1DA180F3006783E0 /* CFNetwork.framework */,
+				E7EF2B8C1BC2F55800678830 /* CoreData.framework */,
+				E737FBAA1B9F4633004CF597 /* SystemConfiguration.framework */,
+				E75A05CD1B7BBF210049A89A /* RSSParser */,
+				E7581A861ADC331000539715 /* MessageUI.framework */,
+				E753A0751AB0D197009F0055 /* Accelerate.framework */,
+				E753A0761AB0D197009F0055 /* AssetsLibrary.framework */,
+				E765EAAF18853A7000801426 /* Foundation.framework */,
+				E765EAB118853A7000801426 /* CoreGraphics.framework */,
+				E765EAB318853A7000801426 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E765EAB518853A7000801426 /* Russian Coins */ = {
+			isa = PBXGroup;
+			children = (
+				E72D601C1A029C7A00903549 /* Russian Coins.entitlements */,
+				E70E4E49188567B200070255 /* CRData.h */,
+				E70E4E4A188567B200070255 /* CRData.m */,
+				E765EABE18853A7000801426 /* CRAppDelegate.h */,
+				E765EABF18853A7000801426 /* CRAppDelegate.m */,
+				E7DDB0551897F98E00842C06 /* Model.xcdatamodeld */,
+				E765EAC118853A7000801426 /* Main_iPhone.storyboard */,
+				E7CD180F1BC4451D00A30457 /* Main_iPad.storyboard */,
+				E7185FE223918952009131AF /* Launch Screen.storyboard */,
+				E70E4E461885637200070255 /* CRCoinCell.h */,
+				E70E4E471885637200070255 /* CRCoinCell.m */,
+				E765EAC718853A7000801426 /* CRMasterViewController.h */,
+				E765EAC818853A7000801426 /* CRMasterViewController.m */,
+				E765EACA18853A7000801426 /* CRDetailViewController.h */,
+				E765EACB18853A7000801426 /* CRDetailViewController.m */,
+				E75E440518AA11E500569966 /* CRViewController.h */,
+				E75E440618AA11E500569966 /* CRViewController.m */,
+				E762863418B1F193006F91D5 /* CRLeftViewController.h */,
+				E762863518B1F193006F91D5 /* CRLeftViewController.m */,
+				E76CFF32197FE3A200987916 /* CRModalController.h */,
+				E76CFF33197FE3A200987916 /* CRModalController.m */,
+				E75A37A71D8AB57400B8CC57 /* CRDeliveryController.h */,
+				E75A37A81D8AB57400B8CC57 /* CRDeliveryController.m */,
+				E7074D571AB04C8B0053C8F2 /* CRStatisticController.h */,
+				E7074D581AB04C8B0053C8F2 /* CRStatisticController.m */,
+				E7E9CA031B6EA4950034114B /* CRShopController.h */,
+				E7E9CA041B6EA4950034114B /* CRShopController.m */,
+				E79295D31B89D2FA00748E5F /* CRZakazController.h */,
+				E79295D41B89D2FA00748E5F /* CRZakazController.m */,
+				E7F17BE71BB8402F00E3632C /* CRZakazCell.h */,
+				E7F17BE81BB8402F00E3632C /* CRZakazCell.m */,
+				E765EAAE18853A7000801426 /* Frameworks */,
+				E728C1DB1887C41800D5078E /* Images.xcassets */,
+				E7581A881ADD791500539715 /* CRInfo.h */,
+				E7581A891ADD791500539715 /* CRInfo.m */,
+				E7DB20B718C322FC0000CF71 /* Library */,
+				E765EAB618853A7000801426 /* Supporting Files */,
+			);
+			name = "Russian Coins";
+			path = "Монеты России";
+			sourceTree = "<group>";
+		};
+		E765EAB618853A7000801426 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E765EAB718853A7000801426 /* Russian Coins-Info.plist */,
+				E765EAB818853A7000801426 /* InfoPlist.strings */,
+				E765EABB18853A7000801426 /* main.m */,
+				E765EABD18853A7000801426 /* Russian Coins-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E765EADA18853A7000801426 /* Russian CoinsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E765EAE018853A7000801426 /* _____________Tests.m */,
+				E765EADB18853A7000801426 /* Supporting Files */,
+			);
+			name = "Russian CoinsTests";
+			path = "Монеты РоссииTests";
+			sourceTree = "<group>";
+		};
+		E765EADB18853A7000801426 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E765EADC18853A7000801426 /* Russian CoinsTests-Info.plist */,
+				E765EADD18853A7000801426 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7DB20B718C322FC0000CF71 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E7869B441DE9C11300C32F3D /* AppledocSettings.plist */,
+				E7869B451DE9C11300C32F3D /* Configuration.plist */,
+				E7DE4EF122C51F8B006D179F /* ATAppUpdater.h */,
+				E7DE4EF222C51F8C006D179F /* ATAppUpdater.m */,
+				E7869B461DE9C11300C32F3D /* Info.plist */,
+				E7869B471DE9C11300C32F3D /* XCDYouTubeClient.h */,
+				E7869B481DE9C11300C32F3D /* XCDYouTubeClient.m */,
+				E7869B491DE9C11300C32F3D /* XCDYouTubeError.h */,
+				E7869B4A1DE9C11300C32F3D /* XCDYouTubeKit.h */,
+				E7869B4B1DE9C11300C32F3D /* XCDYouTubeLogger.h */,
+				E7869B4C1DE9C11300C32F3D /* XCDYouTubeLogger.m */,
+				E7869B4D1DE9C11300C32F3D /* XCDYouTubeLogger+Private.h */,
+				E7869B4E1DE9C11300C32F3D /* XCDYouTubeOperation.h */,
+				E7869B4F1DE9C11300C32F3D /* XCDYouTubePlayerScript.h */,
+				E7869B501DE9C11300C32F3D /* XCDYouTubePlayerScript.m */,
+				E7869B511DE9C11300C32F3D /* XCDYouTubeVideo.h */,
+				E7869B521DE9C11300C32F3D /* XCDYouTubeVideo.m */,
+				E7869B531DE9C11300C32F3D /* XCDYouTubeVideo+Private.h */,
+				E7869B541DE9C11300C32F3D /* XCDYouTubeVideoOperation.h */,
+				E7869B551DE9C11300C32F3D /* XCDYouTubeVideoOperation.m */,
+				E7869B561DE9C11300C32F3D /* XCDYouTubeVideoPlayerViewController.h */,
+				E7869B571DE9C11300C32F3D /* XCDYouTubeVideoPlayerViewController.m */,
+				E7869B581DE9C11300C32F3D /* XCDYouTubeVideoWebpage.h */,
+				E7869B591DE9C11300C32F3D /* XCDYouTubeVideoWebpage.m */,
+				E76A927E1B1A33FA00B5EB47 /* DropDownView.h */,
+				E76A927F1B1A33FA00B5EB47 /* DropDownView.m */,
+				E756521F193626B300B9E9F2 /* MxMovingPlaceholderTextField.h */,
+				E7565220193626B300B9E9F2 /* MxMovingPlaceholderTextField.m */,
+				E7DB20B918C323DA0000CF71 /* SWRevealViewController.h */,
+				E7DB20B818C323DA0000CF71 /* SWRevealViewController.m */,
+				E7AC3D1E1DA18E5C006783E0 /* Base64Transcoder.h */,
+				E7AC3D1F1DA18E5C006783E0 /* Base64Transcoder.m */,
+				E7AC3D201DA18E5C006783E0 /* HSK_CFUtilities.h */,
+				E7AC3D211DA18E5C006783E0 /* HSK_CFUtilities.m */,
+				E7AC3D221DA18E5C006783E0 /* NSData+Base64Additions.h */,
+				E7AC3D231DA18E5C006783E0 /* NSData+Base64Additions.m */,
+				E7AC3D241DA18E5C006783E0 /* NSStream+SKPSMTPExtensions.h */,
+				E7AC3D251DA18E5C006783E0 /* NSStream+SKPSMTPExtensions.m */,
+				E7AC3D261DA18E5C006783E0 /* SKPSMTPMessage.h */,
+				E7AC3D271DA18E5C006783E0 /* SKPSMTPMessage.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E765EAAB18853A7000801426 /* Russian Coins */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E765EAE418853A7000801426 /* Build configuration list for PBXNativeTarget "Russian Coins" */;
+			buildPhases = (
+				E765EAA818853A7000801426 /* Sources */,
+				E765EAA918853A7000801426 /* Frameworks */,
+				E765EAAA18853A7000801426 /* Resources */,
+				E7D99F541BAEBE3600270228 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Russian Coins";
+			productName = "Монеты России";
+			productReference = E765EAAC18853A7000801426 /* Russian Coins.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E765EAA418853A6F00801426 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CR;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Andrey Sonido";
+				TargetAttributes = {
+					E765EAAB18853A7000801426 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E765EAA718853A6F00801426 /* Build configuration list for PBXProject "Russian Coins" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ru,
+				en,
+			);
+			mainGroup = E765EAA318853A6F00801426;
+			productRefGroup = E765EAAD18853A7000801426 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E765EAAB18853A7000801426 /* Russian Coins */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E765EAAA18853A7000801426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E728C1DC1887C41800D5078E /* Images.xcassets in Resources */,
+				E7CD180D1BC4451D00A30457 /* Main_iPad.storyboard in Resources */,
+				E7185FE323918952009131AF /* Launch Screen.storyboard in Resources */,
+				E765EAC318853A7000801426 /* Main_iPhone.storyboard in Resources */,
+				E7869B5B1DE9C11300C32F3D /* Configuration.plist in Resources */,
+				E765EABA18853A7000801426 /* InfoPlist.strings in Resources */,
+				E7869B5A1DE9C11300C32F3D /* AppledocSettings.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E765EAA818853A7000801426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7869B5D1DE9C11300C32F3D /* XCDYouTubeClient.m in Sources */,
+				E7869B611DE9C11300C32F3D /* XCDYouTubeVideoOperation.m in Sources */,
+				E7AC3D2B1DA18E5C006783E0 /* NSStream+SKPSMTPExtensions.m in Sources */,
+				E70E4E4B188567B200070255 /* CRData.m in Sources */,
+				E7AC3D2C1DA18E5C006783E0 /* SKPSMTPMessage.m in Sources */,
+				E7869B621DE9C11300C32F3D /* XCDYouTubeVideoPlayerViewController.m in Sources */,
+				E76A92801B1A33FA00B5EB47 /* DropDownView.m in Sources */,
+				E762863618B1F193006F91D5 /* CRLeftViewController.m in Sources */,
+				E7AC3D281DA18E5C006783E0 /* Base64Transcoder.m in Sources */,
+				E7869B601DE9C11300C32F3D /* XCDYouTubeVideo.m in Sources */,
+				E75E440718AA11E500569966 /* CRViewController.m in Sources */,
+				E765EABC18853A7000801426 /* main.m in Sources */,
+				E7DDB0571897F98E00842C06 /* Model.xcdatamodeld in Sources */,
+				E753A0721AB07295009F0055 /* CRStatisticController.m in Sources */,
+				E7565221193626B300B9E9F2 /* MxMovingPlaceholderTextField.m in Sources */,
+				E79295D51B89D2FA00748E5F /* CRZakazController.m in Sources */,
+				E75A37A91D8AB57400B8CC57 /* CRDeliveryController.m in Sources */,
+				E7AC3D2A1DA18E5C006783E0 /* NSData+Base64Additions.m in Sources */,
+				E7869B5E1DE9C11300C32F3D /* XCDYouTubeLogger.m in Sources */,
+				E765EAC918853A7000801426 /* CRMasterViewController.m in Sources */,
+				E7DE4EF322C51F8C006D179F /* ATAppUpdater.m in Sources */,
+				E70E4E481885637200070255 /* CRCoinCell.m in Sources */,
+				E76CFF34197FE3A200987916 /* CRModalController.m in Sources */,
+				E7581A8A1ADD791500539715 /* CRInfo.m in Sources */,
+				E7869B5F1DE9C11300C32F3D /* XCDYouTubePlayerScript.m in Sources */,
+				E7AC3D291DA18E5C006783E0 /* HSK_CFUtilities.m in Sources */,
+				E7DB20BA18C323DA0000CF71 /* SWRevealViewController.m in Sources */,
+				E7F17BE91BB8402F00E3632C /* CRZakazCell.m in Sources */,
+				E765EACC18853A7000801426 /* CRDetailViewController.m in Sources */,
+				E7E9CA051B6EA4950034114B /* CRShopController.m in Sources */,
+				E765EAC018853A7000801426 /* CRAppDelegate.m in Sources */,
+				E7869B631DE9C11300C32F3D /* XCDYouTubeVideoWebpage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E765EAB818853A7000801426 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7C9514B1ABF694000F6D8CC /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E765EAC118853A7000801426 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7C951491ABF694000F6D8CC /* ru */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E765EADD18853A7000801426 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7C9514C1ABF694000F6D8CC /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E7CD180F1BC4451D00A30457 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7CD180E1BC4451D00A30457 /* ru */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E765EAE218853A7000801426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		E765EAE318853A7000801426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Release;
+		};
+		E765EAE518853A7000801426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				ASSETCATALOG_COMPILER_OPTIMIZATION = space;
+				CODE_SIGN_ENTITLEMENTS = "Russian Coins.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = "";
+				CURRENT_PROJECT_VERSION = 74;
+				DEVELOPMENT_TEAM = CB2FK63369;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/andreyandrosov/Documents/Xcode,
+					"$(PROJECT_DIR)/Монеты\\ России",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Монеты России/Russian Coins-Prefix.pch";
+				INFOPLIST_FILE = "Монеты России/Russian Coins-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 1.52;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricgold.Russian-Coins2";
+				PRODUCT_NAME = "Russian Coins";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E765EAE618853A7000801426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				ASSETCATALOG_COMPILER_OPTIMIZATION = space;
+				CODE_SIGN_ENTITLEMENTS = "Russian Coins.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = "";
+				CURRENT_PROJECT_VERSION = 74;
+				DEVELOPMENT_TEAM = CB2FK63369;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/andreyandrosov/Documents/Xcode,
+					"$(PROJECT_DIR)/Монеты\\ России",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Монеты России/Russian Coins-Prefix.pch";
+				INFOPLIST_FILE = "Монеты России/Russian Coins-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 1.52;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricgold.Russian-Coins2";
+				PRODUCT_NAME = "Russian Coins";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E765EAA718853A6F00801426 /* Build configuration list for PBXProject "Russian Coins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E765EAE218853A7000801426 /* Debug */,
+				E765EAE318853A7000801426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E765EAE418853A7000801426 /* Build configuration list for PBXNativeTarget "Russian Coins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E765EAE518853A7000801426 /* Debug */,
+				E765EAE618853A7000801426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E7DDB0551897F98E00842C06 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E7DDB0561897F98E00842C06 /* Model.xcdatamodel */,
+			);
+			currentVersion = E7DDB0561897F98E00842C06 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E765EAA418853A6F00801426 /* Project object */;
+}
