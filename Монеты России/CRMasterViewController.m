@@ -18,9 +18,7 @@
 #import "XCDYouTubeKit.h"
 
 @interface CRMasterViewController ()
-{
-    //MPMoviePlayerViewController *_player;
-}
+
 @property(nonatomic, strong) UIAlertView *banner;
 @property(nonatomic) NSUInteger logoutTimeRemaining;
 @property (nonatomic, strong) UISearchController *searchController;
@@ -37,7 +35,7 @@ static NSString* Diccoins2 = @"diccoins2";
 static NSString* Diccoins3 = @"diccoins3";
 static NSString* UpdateIpad = @"update";
 static NSString* Arrow = @"arrow";
-//NSArray *connection1;
+
 NSURLConnection *connection1;
 NSURLConnection *connection2;
 NSURLConnection *connection3;
@@ -91,7 +89,6 @@ NSXMLParser *rssParser3;
     _arrow = [userDefaults integerForKey:Arrow];
     [userDefaults synchronize];
     
-    //NSDictionary *barButtonAppearanceDict = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Light" size:13.0], NSForegroundColorAttributeName: [UIColor systemGrayColor]};
     NSDictionary *barButtonAppearanceDict = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:14.0]};
     [_rightbutton setTitleTextAttributes:barButtonAppearanceDict forState:UIControlStateNormal];
 
@@ -112,7 +109,6 @@ NSXMLParser *rssParser3;
              [userDefaults setObject:_dataUser2 forKey:Diccoins];
              [userDefaults synchronize];
              [self.tableView reloadData];
-             // iCloud is available
          }
      }
     
@@ -121,9 +117,7 @@ NSXMLParser *rssParser3;
     self.searchController.delegate = self;
     self.searchController.dimsBackgroundDuringPresentation = NO;
     searchController.definesPresentationContext = true;
-    //self.searchController.searchBar.delegate = self;
 
-    //self.searchController.searchBar.barTintColor = [UIColor orangeColor];
     [self.tableView setTableHeaderView:self.searchController.searchBar];
     self.definesPresentationContext = YES;
     
@@ -136,7 +130,6 @@ NSXMLParser *rssParser3;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadSettings) name:Diccoins object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadSettings) name:Diccoins3 object:nil];
     
-    //arrayData = [[NSArray alloc] initWithArray:[NSArray arrayWithObjects:@"Каталог",@"Моя коллекция",@"Статистика",@"Магазин",@"Монеты со скидкой",@"Поступления месяца",@"Доставка и оплата",nil]];
     arrayData = [[NSArray alloc] initWithArray:[NSArray arrayWithObjects:@"Каталог",@"Моя коллекция",@"Статистика",@"Магазин",@"Перейти на сайт",@"Контакты",nil]];
     arrayInvest = [[NSArray alloc] initWithArray:[NSArray arrayWithObjects:@"5216-0060",@"5216-0060-1",@"5216-0060-2",@"5216-0060-4",@"5111-0178",
                                                   @"3213-0003",@"5111-0033",@"5217-0038",@"5216-0080",@"5217-0041",@"5216-0095",@"5217-0040",@"5216-0089",nil]];
@@ -153,7 +146,6 @@ NSXMLParser *rssParser3;
             dropDownView.delegate = self;
             //NSLog(@"iPhone 5/5s");
         } else if ( screenHeight > 480 && screenHeight < 736 ){
-            //dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:32 paddingLeft:90 paddingRight:187 refView:button animation:BOTH openAnimationDuration:0
             if (@available(iOS 11, *)) {
                 dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:32 paddingLeft:20 paddingRight:227 refView:button animation:BOTH openAnimationDuration:0
                 closeAnimationDuration:0];
@@ -187,8 +179,6 @@ NSXMLParser *rssParser3;
     [button setImage:[UIImage imageNamed:@"arrowDown.png"] forState:UIControlStateNormal];
     button.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 10);
     
-    //[self.searchDisplayController.searchResultsTableView setRowHeight:self.tableView.rowHeight];
-    
     self.detailViewController = (CRDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     [self dataChange];
     [self firstLoad];
@@ -199,12 +189,6 @@ NSXMLParser *rssParser3;
     NSURLRequest *theRequest=[NSURLRequest requestWithURL:url
                                               cachePolicy:NSURLRequestUseProtocolCachePolicy
                                           timeoutInterval:60.0];
-    //NSURLRequest *theRequest2=[NSURLRequest requestWithURL:url2
-    //                                          cachePolicy:NSURLRequestUseProtocolCachePolicy
-    //                                      timeoutInterval:60.0];
-    //NSURLRequest *theRequest3=[NSURLRequest requestWithURL:url3
-    //                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
-    //                                       timeoutInterval:60.0];
     
     connection1=[[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
     
@@ -223,8 +207,6 @@ NSXMLParser *rssParser3;
             self.rssData = [NSMutableData data];
             self.rssData = [NSMutableData dataWithData:responseData];
     }] resume];
-    
-    //self.rssData = [NSMutableData data];
     
     self.rssData2 = [NSMutableData data];
     self.rssData3 = [NSMutableData data];
@@ -248,7 +230,7 @@ NSXMLParser *rssParser3;
             {
                 screenHeight = screenWidth;
             }
-            //CGRect myImageRect = CGRectMake(0.0f, 0.0f, 320.0f, 568.0f);
+
             CGRect myImageRect = CGRectMake(0.0f, 0.0f, screenWidth, screenHeight);
             _myImage = [[UIImageView alloc] initWithFrame:myImageRect];
             _myImage.image = [UIImage imageNamed:@"fonInfo6plus.png"];
@@ -256,45 +238,6 @@ NSXMLParser *rssParser3;
             UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapped:)];
             _myImage.userInteractionEnabled = YES;
             [_myImage addGestureRecognizer:tap];
-            /*
-            if( screenHeight > 480 && screenHeight < 667 ){
-                CGRect myImageRect = CGRectMake(0.0f, 0.0f, 320.0f, 568.0f);
-                _myImage = [[UIImageView alloc] initWithFrame:myImageRect];
-                _myImage.image = [UIImage imageNamed:@"fonInfo5.png"];
-                [self.navigationController.view addSubview:_myImage];
-                UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapped:)];
-                _myImage.userInteractionEnabled = YES;
-                [_myImage addGestureRecognizer:tap];
-                //NSLog(@"iPhone 5/5s");
-            } else if ( screenHeight > 480 && screenHeight < 736 ){
-                CGRect myImageRect = CGRectMake(0.0f, 0.0f, 375.0f, 667.0f);
-                _myImage = [[UIImageView alloc] initWithFrame:myImageRect];
-                _myImage.image = [UIImage imageNamed:@"fonInfo6.png"];
-                [self.navigationController.view addSubview:_myImage];
-                UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapped:)];
-                _myImage.userInteractionEnabled = YES;
-                [_myImage addGestureRecognizer:tap];
-                //NSLog(@"iPhone 6");
-            } else if ( screenHeight > 480 ){
-                CGRect myImageRect = CGRectMake(0.0f, 0.0f, 414.0f, 736.0f);
-                _myImage = [[UIImageView alloc] initWithFrame:myImageRect];
-                _myImage.image = [UIImage imageNamed:@"fonInfo6plus.png"];
-                [self.navigationController.view addSubview:_myImage];
-                UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapped:)];
-                _myImage.userInteractionEnabled = YES;
-                [_myImage addGestureRecognizer:tap];
-                //NSLog(@"iPhone 6 Plus");
-            } else {
-                CGRect myImageRect = CGRectMake(0.0f, 0.0f, 320.0f, 480.0f);
-                _myImage = [[UIImageView alloc] initWithFrame:myImageRect];
-                _myImage.image = [UIImage imageNamed:@"fonInfo4.png"];
-                [self.navigationController.view addSubview:_myImage];
-                UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapped:)];
-                _myImage.userInteractionEnabled = YES;
-                [_myImage addGestureRecognizer:tap];
-                //NSLog(@"iPhone 4/4s");
-             */
-             
         }
     }
     _whatsup.hidden = NO;
@@ -311,24 +254,6 @@ NSXMLParser *rssParser3;
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"LaunchedBannerNew"]) {
         [NSTimer scheduledTimerWithTimeInterval:2*60*60 target:self selector:@selector(bannernew:) userInfo:nil repeats:NO];
     }
-    
-    /*
-     _banner = [[UIAlertView alloc] initWithTitle:@"Наш сайт в интернете\r\rWWW.RICGOLD.COM\r\r"
-     message:@"Окно закроется через 5 секунд"
-     delegate:self
-     cancelButtonTitle:@"Отмена"
-     otherButtonTitles:@"ПЕРЕЙТИ", nil];
-     _banner.alertViewStyle = UIAlertViewStyleDefault;
-     _banner.tag = 2;
-     [_banner show];
-     self.logoutTimeRemaining = 5;
-     [NSTimer scheduledTimerWithTimeInterval:1
-     target:self
-     selector:@selector(updateAlert:)
-     userInfo:nil
-     repeats:YES];
-     
-     **/
 }
 
 - (void)didReceiveMemoryWarning
@@ -595,33 +520,9 @@ didStartElement:(NSString *)elementName
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ricgold.com"]];
 }
 
-/*
-- (void)updateAlert:(NSTimer *)timer {
-    self.logoutTimeRemaining--;
-    _banner.message = [NSString stringWithFormat:@"Окно закроется через %lu секунд", (unsigned long)self.logoutTimeRemaining];
-    if (self.logoutTimeRemaining == 4|self.logoutTimeRemaining == 3|self.logoutTimeRemaining == 2) {
-        _banner.message = [NSString stringWithFormat:@"Окно закроется через %lu секунды", (unsigned long)self.logoutTimeRemaining];
-    }
-    if (self.logoutTimeRemaining == 1) {
-        _banner.message = [NSString stringWithFormat:@"Окно закроется через %lu секунду", (unsigned long)self.logoutTimeRemaining];
-    }
-    if (self.logoutTimeRemaining == 0) {
-        // actually log out
-        [timer invalidate];
-        [_banner dismissWithClickedButtonIndex:0 animated:YES];
-    }
-}
-**/
 - (void) moviePlayerPlaybackDidFinish:(NSNotification *)notification
 {
-    /*
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:notification.object];
-    MPMovieFinishReason finishReason = [notification.userInfo[MPMoviePlayerPlaybackDidFinishReasonUserInfoKey] integerValue];
-    if (finishReason == MPMovieFinishReasonPlaybackError)
-    {
-        //NSError *error = notification.userInfo[XCDMoviePlayerPlaybackDidFinishErrorUserInfoKey];
-        // Handle error
-    }*/
+
 }
 
 - (void )imageTapped:(UITapGestureRecognizer *) gestureRecognizer
@@ -1112,7 +1013,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Алмазный фонд России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2018",@"2016",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2018",@"2016",nil];
         _betabet = [[NSArray alloc]initWithObjects:@"3 рубля",@"25 рублей", nil];
         _titleSeries.text = @"Алмазный фонд России";
         _data2 = _data;
@@ -2127,121 +2028,6 @@ didStartElement:(NSString *)elementName
         }
     } else if (_dropdown == 4) {
         
-        /*NSPredicate* coin = [NSPredicate predicateWithFormat:@"id IN %@", newsSale];
-        NSArray *coinres = [_data filteredArrayUsingPredicate:coin];
-        _data = coinres;
-        
-        if (_kat == 0) {
-            _dataSource = [[NSMutableArray alloc]initWithCapacity:[_alphabet count]];
-            for(int i = 0; i<[_alphabet count]; i ++) {
-                NSPredicate* p = [NSPredicate predicateWithFormat:@"created == %@", [_alphabet objectAtIndex:i]];
-                NSArray *fresult = [_data filteredArrayUsingPredicate:p];
-                if([fresult count]>0) {
-                    [_dataSource addObject:(fresult)];
-                    [_alphabet2 addObject:[_alphabet objectAtIndex:i]];
-                }
-            }
-        }
-        if (_kat == 1) {
-            _dataSource = [[NSMutableArray alloc]initWithCapacity:[_betabet count]];
-            for(int i = 0; i<[_betabet count]; i ++) {
-                NSPredicate* p = [NSPredicate predicateWithFormat:@"rating == %@", [_betabet objectAtIndex:i]];
-                NSArray *fresult = [_data filteredArrayUsingPredicate:p];
-                if([fresult count]>0) {
-                    [_dataSource addObject:(fresult)];
-                    [_alphabet2 addObject:[_betabet objectAtIndex:i]];
-                }
-            }
-        }
-        if (_kat == 2) {
-            _alphabet2 = [[NSMutableArray alloc] init];
-            _dataSource = [[NSMutableArray alloc] init];
-            _dataSource1 = [[NSMutableArray alloc] init];
-            _dataSource2 = [[NSMutableArray alloc] init];
-            _dataSource3 = [[NSMutableArray alloc] init];
-            _dataSource4 = [[NSMutableArray alloc] init];
-            _dataSource5 = [[NSMutableArray alloc] init];
-            _dataSource6 = [[NSMutableArray alloc] init];
-            for(int i = 0; i<[_gammabet1 count]; i ++) {
-                NSPredicate* p = [NSPredicate predicateWithFormat:@"pcs == %@", [_gammabet1 objectAtIndex:i]];
-                NSArray *fresult = [_data filteredArrayUsingPredicate:p];
-                if([fresult count]>0) {
-                    [_dataSource1 addObjectsFromArray:(fresult)];
-                }
-            }
-            if([_dataSource1 count]>0) {
-                [_dataSource addObject:_dataSource1];
-                [_alphabet2 addObject:@"<99"];
-            }
-            for(int i = 0; i<[_gammabet2 count]; i ++) {
-                NSPredicate* p = [NSPredicate predicateWithFormat:@"pcs == %@", [_gammabet2 objectAtIndex:i]];
-                NSArray *fresult = [_data filteredArrayUsingPredicate:p];
-                if([fresult count]>0) {
-                    [_dataSource2 addObjectsFromArray:(fresult)];
-                }
-            }
-            if([_dataSource2 count]>0) {
-                [_dataSource addObject:_dataSource2];
-                [_alphabet2 addObject:@"100-499"];
-            }
-            for(int i = 0; i<[_gammabet3 count]; i ++) {
-                NSPredicate* p = [NSPredicate predicateWithFormat:@"pcs == %@", [_gammabet3 objectAtIndex:i]];
-                NSArray *fresult = [_data filteredArrayUsingPredicate:p];
-                if([fresult count]>0) {
-                    [_dataSource3 addObjectsFromArray:(fresult)];
-                }
-            }
-            if([_dataSource3 count]>0) {
-                [_dataSource addObject:_dataSource3];
-                [_alphabet2 addObject:@"500-999"];
-            }
-            for(int i = 0; i<[_gammabet4 count]; i ++) {
-                NSPredicate* p = [NSPredicate predicateWithFormat:@"pcs == %@", [_gammabet4 objectAtIndex:i]];
-                NSArray *fresult = [_data filteredArrayUsingPredicate:p];
-                if([fresult count]>0) {
-                    [_dataSource4 addObjectsFromArray:(fresult)];
-                }
-            }
-            if([_dataSource4 count]>0) {
-                [_dataSource addObject:_dataSource4];
-                [_alphabet2 addObject:@"1 000-4 999"];
-            }
-            for(int i = 0; i<[_gammabet5 count]; i ++) {
-                NSPredicate* p = [NSPredicate predicateWithFormat:@"pcs == %@", [_gammabet5 objectAtIndex:i]];
-                NSArray *fresult = [_data filteredArrayUsingPredicate:p];
-                if([fresult count]>0) {
-                    [_dataSource5 addObjectsFromArray:(fresult)];
-                }
-            }
-            if([_dataSource5 count]>0) {
-                [_dataSource addObject:_dataSource5];
-                [_alphabet2 addObject:@"5 000-9 999"];
-            }
-            for(int i = 0; i<[_gammabet6 count]; i ++) {
-                NSPredicate* p = [NSPredicate predicateWithFormat:@"pcs == %@", [_gammabet6 objectAtIndex:i]];
-                NSArray *fresult = [_data filteredArrayUsingPredicate:p];
-                if([fresult count]>0) {
-                    [_dataSource6 addObjectsFromArray:(fresult)];
-                }
-            }
-            if([_dataSource6 count]>0) {
-                [_dataSource addObject:_dataSource6];
-                [_alphabet2 addObject:@"10 000<"];
-            }
-        }
-        if (_haveInet == 0) {
-            UIAlertView *subAlert = [[UIAlertView alloc] initWithTitle:@"Отсутствует соединение интернет"
-                                                               message:@"Для доступа в магазин требуется подключение к сети интернет"
-                                                              delegate:self
-                                                     cancelButtonTitle:@"ОК"
-                                                     otherButtonTitles:nil];
-            subAlert.alertViewStyle = UIAlertViewStyleDefault;
-            [subAlert show];
-            
-            [button setTitle:[arrayData objectAtIndex:0] forState:UIControlStateNormal];
-            _dropdown = 0;
-            [self loadSettings];
-        }**/
     } else if (_dropdown == 5) {
         NSPredicate* coin = [NSPredicate predicateWithFormat:@"id IN %@", newsNew];
         NSArray *coinres = [_data filteredArrayUsingPredicate:coin];
@@ -2764,17 +2550,7 @@ didStartElement:(NSString *)elementName
         
         NSString *string = item.pcs;
         cell.price1.text = [NSString stringWithFormat:@"Тираж: %@ шт", string];
-        /*
-        if (item.price == nil) {
-            cell.price1.text = @" ";
-        } else {
-            NSString *string = [NSString stringWithFormat:@"Средняя цена: %@ ₽", [numberFormatter stringForObjectValue:item.price]];
-            cell.price1.text = [string stringByReplacingOccurrencesOfString: @ "," withString: @ " "];
-        }
-        if (_dropdown == 3|_dropdown == 4|_dropdown == 5) {
-            cell.price1.text = @" ";
-        }
-        */
+
         NSString *find = [NSString stringWithFormat: @"%@-1",item.id];
         NSPredicate* with1 = [NSPredicate predicateWithFormat:@"article CONTAINS[cd] %@", find];
         NSPredicate* notwith1 = [NSCompoundPredicate notPredicateWithSubpredicate:with1];
@@ -2930,10 +2706,6 @@ didStartElement:(NSString *)elementName
 
 - (void)searchForText:(NSString *)searchString
 {
-    /* Put here everything that is in the method:
-     - (BOOL)searchDisplayController:(UISearchDisplayController *)controller     shouldReloadTableForSearchString:(NSString *)searchString
-     ...BUT WITH NO RETURN VALUE */
-    
     [self filterContentForSearchText:searchString
     scope:[[self.searchController.searchBar scopeButtonTitles]
     objectAtIndex:[self.searchController.searchBar
@@ -2949,17 +2721,6 @@ didStartElement:(NSString *)elementName
         _filteredContent = [[CRData fetchData] filteredArrayUsingPredicate:predicate2];
     }
 }
-/*
--(BOOL)searchController:(UISearchController *)controller shouldReloadTableForSearchString:(NSString *)searchString
-{
-    [self filterContentForSearchText:searchString
-       scope:[[self.searchController.searchBar scopeButtonTitles]
-       objectAtIndex:[self.searchController.searchBar
-       selectedScopeButtonIndex]]];
-
-    return YES;
-}
-*/
 
 #pragma mark - UITableViewDelegate
 
@@ -2995,6 +2756,5 @@ didStartElement:(NSString *)elementName
         }
     }
 }
-
 
 @end
