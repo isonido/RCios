@@ -9,9 +9,6 @@
 #import "CRAppDelegate.h"
 #import "CRLeftViewController.h"
 #import "ATAppUpdater.h"
-//#import "ACTReporter.h"
-//#import "Adjust.h"
-//#import "YandexMobileMetrica.h"
 
 static NSString* Diccoins = @"diccoins";
 
@@ -19,40 +16,12 @@ static NSString* Diccoins = @"diccoins";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
-    
-    //YMMYandexMetricaConfiguration *configuration = [[YMMYandexMetricaConfiguration alloc] initWithApiKey:@"API_key"];
-    //[YMMYandexMetrica activateWithConfiguration:configuration];
-    
-    /*
-    ATAppUpdater *updater = [ATAppUpdater sharedUpdater];
-    [updater setAlertTitle:NSLocalizedString(@"Новая версия!", @"Alert Title")];
-    [updater setAlertMessage:NSLocalizedString(@"Версия %@ уже доступна в AppStore.", @"Alert Message")];
-    [updater setAlertUpdateButtonTitle:@"Обновить"];
-    [updater setAlertCancelButtonTitle:@"Отмена"];
-    //[updater setDelegate:self]; // Optional
-    [updater showUpdateWithConfirmation];
-    return YES;
-    */
-    //[ACTAutomatedUsageTracker enableAutomatedUsageReportingWithConversionID:@"949049157"];
-    /*
-    [ACTConversionReporter reportWithConversionID:@"949049157" label:@"LraXCPnQs2AQxa7FxAM" value:@"0.00" isRepeatable:NO];
-    
-    NSString *yourAppToken = @"7gjqwt8vzwfm";
-    NSString *environment = ADJEnvironmentProduction;
-    //NSString *environment = ADJEnvironmentSandbox;
-    ADJConfig *adjustConfig = [ADJConfig configWithAppToken:yourAppToken
-                                                environment:environment];
-    [Adjust appDidLaunch:adjustConfig];
-    
-    ADJEvent *event = [ADJEvent eventWithEventToken:@"olqu3e"];
-    [Adjust trackEvent:event];
-*/
+
     return YES;
 }
 
@@ -82,14 +51,5 @@ static NSString* Diccoins = @"diccoins";
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-/*
-+ (void)initialize
-{
-    if ([self class] == [CRAppDelegate class]) {
-        //Инициализация AppMetrica SDK
-        [YMMYandexMetrica activateWithApiKey:@"fb067ef6-2db2-4cff-82c2-78eb2e3c17c7"];
-    }
-}
-*/
 
 @end

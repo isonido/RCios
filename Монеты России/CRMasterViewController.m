@@ -607,7 +607,7 @@ didStartElement:(NSString *)elementName
     
     if (_rowSerial == 0) {
         _data = [CRData fetchData];
-        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",
+        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",
                      @"2006",@"2005",@"2004",@"2003",@"2002",@"2001",@"2000",@"1999",
                      @"1998",@"1997",@"1996",@"1995",@"1994",@"1993",@"1992",@"1976",nil];
         
@@ -1062,7 +1062,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Выдающиеся личности России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",
+        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",
                      @"2008",@"2007",@"2006",@"2005",@"2004",@"2003",@"2002",@"2001",@"2000",@"1999",@"1998",
                      @"1997",@"1996",@"1995",@"1994",@"1993",nil];
         _betabet = [[NSArray alloc]initWithObjects:@"1 рубль",@"2 рубля", nil];
@@ -1192,8 +1192,8 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Инвестиционная монета'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2010",@"2009",@"2008",@"2007",@"2006",@"1995",@"1976",nil];
-        _betabet = [[NSArray alloc]initWithObjects:@"3 рубля",@"25 рублей",@"50 рублей",@"100 рублей",@"200 рублей", nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2010",@"2009",@"2008",@"2007",@"2006",@"1995",@"1976",nil];
+        _betabet = [[NSArray alloc]initWithObjects:@"3 рубля",@"10 рублей",@"25 рублей",@"50 рублей",@"100 рублей",@"200 рублей", nil];
         _titleSeries.text = @"Инвестиционная монета";
         _data2 = _data;
     }
@@ -2378,7 +2378,7 @@ didStartElement:(NSString *)elementName
     if (self.searchController.isActive) {
         cell = [self.tableView dequeueReusableCellWithIdentifier:CoinCellId];
         CRData *item = [_filteredContent objectAtIndex:indexPath.row];
-        cell.cellCoinView.image = [UIImage imageNamed:item.imageName3];
+        cell.cellCoinView.image = [UIImage imageNamed:item.imageName2];
         cell.cellTextRating.text = item.rating;
         if (item.rating.length == 12) {
             NSMutableString *st = [NSMutableString stringWithString:item.rating];
@@ -2539,7 +2539,7 @@ didStartElement:(NSString *)elementName
     } else {
     CRData *item = [[_dataSource objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
         
-    cell.cellCoinView.image = [UIImage imageNamed:item.imageName3];
+    cell.cellCoinView.image = [UIImage imageNamed:item.imageName2];
     cell.cellTextRating.text = item.rating;
         if (item.rating.length == 12) {
             NSMutableString *st = [NSMutableString stringWithString:item.rating];

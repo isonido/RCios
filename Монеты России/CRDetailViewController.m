@@ -48,6 +48,8 @@ static NSString* Still = @"still";
 {
     [super viewDidLoad];
     
+    selectedSegmentImage.layer.cornerRadius = 125;
+    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         [self refreshScreen];
         

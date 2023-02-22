@@ -84,8 +84,9 @@ static NSString* pcs2 = @"2pcs";
                 //NSLog(@"iPhone 4/4s");
             }
         } else {
-            _stepper1.frame = CGRectMake(36, 230, 0, 0);
-            _stepper2.frame = CGRectMake(172, 230, 0, 0);
+            //iPad
+            _stepper1.frame = CGRectMake(250, 230, 0, 0);
+            _stepper2.frame = CGRectMake(820, 230, 0, 0);
         }
     }
     
@@ -154,7 +155,7 @@ static NSString* pcs2 = @"2pcs";
     }
     _dvor = _detail.dvor;
     _quality = _detail.quality;
-    _smallCoins.image = [UIImage imageNamed:_detail.imageName3];
+    _smallCoins.image = [UIImage imageNamed:_detail.imageName2];
     _titleAdd.text = _detail.title;
 
     self.navigationItem.title = @"Добавить/Изменить";

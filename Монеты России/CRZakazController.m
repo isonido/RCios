@@ -37,10 +37,6 @@ static NSString* City = @"city";
     _dataZakaz = [[[NSUserDefaults standardUserDefaults] arrayForKey:Diccoins3] mutableCopy];
     [userDefaults synchronize];
     
-    //_nameField.text = [[NSUserDefaults standardUserDefaults] stringForKey:Name];
-    //_cityField.text = [[NSUserDefaults standardUserDefaults] stringForKey:City];
-    _telefonField.text = [[NSUserDefaults standardUserDefaults] stringForKey:Telefon];
-    
     if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ){
         CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
         
@@ -215,37 +211,6 @@ static NSString* City = @"city";
     // Present mail view controller on screen
     [self presentViewController:mc animated:YES completion:nil];
     
-    
-    //NSMutableArray *toRecipents = [NSMutableArray arrayWithObjects:@"bkv@ricgold.com",@"mev81@mail.ru",@"mister.loka@yandex.ru",@"harchenko1987@yandex.ru",nil];
-    
-    
-    /*
-    NSString *txtMessage = [NSString stringWithFormat:@"%@\n\r%@\n\n\rТелефон: +7%@", _textMailZakaz, _sumZakaz.text, _telefonField.text];
-    SKPSMTPMessage *testMsg = [[SKPSMTPMessage alloc] init];
-    
-    testMsg.fromEmail = @"rial.gold2016@gmail.com"; // адрес, от кого отправляем письмо
-    testMsg.toEmail = @"www.ricgold.com@yandex.ru"; //адрес, куда отправляем письмо
-    testMsg.relayHost = @"smtp.gmail.com"; //smtp сервер, который вы используете
-    testMsg.requiresAuth = YES; //требуется ли аутентификация
-    testMsg.login = @"rial.gold2016@gmail.com"; //login на smtp сервев
-    testMsg.pass = @"hbfkrhtlbn"; //пароль для smtp сервера
-    testMsg.subject = @"Заказ с iOS"; //тема письма
-    //testMsg.ccEmail = @"harchenko1987@yandex.ru";
-    testMsg.bccEmail = @"andrey.sonido@gmail.com";
-    testMsg.wantsSecure = YES; // smtp.gmail.com doesn't work without TLS!
-    
-    NSDictionary *plainPart = [NSDictionary dictionaryWithObjectsAndKeys:@"text/plain",
-                               kSKPSMTPPartContentTypeKey,
-                               txtMessage,
-                               kSKPSMTPPartMessageKey,
-                               @"8bit",
-                               kSKPSMTPPartContentTransferEncodingKey,
-                               nil];
-    
-    testMsg.parts = [NSArray arrayWithObjects:plainPart,nil];
-    
-    [testMsg send];
-    */
     _text1.hidden = NO;
     _text2.hidden = NO;
     _email.enabled = NO;
@@ -341,7 +306,7 @@ static NSString* City = @"city";
     }
     cell = [_tableZakaz dequeueReusableCellWithIdentifier:CoinCellId];
     CRData *item = [_dataSource objectAtIndex:indexPath.row];
-    cell.cellImage.image = [UIImage imageNamed:item.imageName3];
+    cell.cellImage.image = [UIImage imageNamed:item.imageName2];
     cell.cellRating.text = item.rating;
     cell.cellTitle.text = item.title;
     
