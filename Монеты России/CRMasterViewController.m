@@ -1096,6 +1096,15 @@ didStartElement:(NSString *)elementName
         _data2 = _data;
     }
     if (_rowSerial == 59) {
+        NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Города'"];
+        NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
+        _data = serialResult;
+        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",nil];
+        _betabet = [[NSArray alloc]initWithObjects:@"3 рубля",@"50 рублей", nil];
+        _titleSeries.text = @"Города";
+        _data2 = _data;
+    }
+    if (_rowSerial == 60) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Города, освобожденные советскими войсками от немецко-фашистских захватчиков'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1103,7 +1112,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Города, освобожденные советскими войсками от немецко-фашистских захватчиков";
         _data2 = _data;
     }
-    if (_rowSerial == 60) {
+    if (_rowSerial == 61) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Города воинской славы'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1111,7 +1120,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Города воинской славы";
         _data2 = _data;
     }
-    if (_rowSerial == 61) {
+    if (_rowSerial == 62) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Города трудовой доблести'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1119,7 +1128,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Города трудовой доблести";
         _data2 = _data;
     }
-    if (_rowSerial == 62) {
+    if (_rowSerial == 63) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Дзюдо'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1127,7 +1136,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Дзюдо";
         _data2 = _data;
     }
-    if (_rowSerial == 63) {
+    if (_rowSerial == 64) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Дионисий'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1135,7 +1144,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Дионисий";
         _data2 = _data;
     }
-    if (_rowSerial == 64) {
+    if (_rowSerial == 65) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Древние города России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1144,7 +1153,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Древние города России";
         _data2 = _data;
     }
-    if (_rowSerial == 65) {
+    if (_rowSerial == 66) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Животный мир стран ЕврАзЭС'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1153,7 +1162,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Животный мир стран ЕврАзЭС";
         _data2 = _data;
     }
-    if (_rowSerial == 66) {
+    if (_rowSerial == 67) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Зимние виды спорта'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1161,7 +1170,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Зимние виды спорта";
         _data2 = _data;
     }
-    if (_rowSerial == 67) {
+    if (_rowSerial == 68) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Зимние Олимпийские игры 1998 года'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1170,7 +1179,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Зимние Олимпийские игры 1998 года";
         _data2 = _data;
     }
-    if (_rowSerial == 68) {
+    if (_rowSerial == 69) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Знаки зодиака'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1179,7 +1188,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Знаки зодиака";
         _data2 = _data;
     }
-    if (_rowSerial == 69) {
+    if (_rowSerial == 70) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Золотое кольцо'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1188,7 +1197,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Золотое кольцо";
         _data2 = _data;
     }
-    if (_rowSerial == 70) {
+    if (_rowSerial == 71) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Инвестиционная монета'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1197,7 +1206,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Инвестиционная монета";
         _data2 = _data;
     }
-    if (_rowSerial == 71) {
+    if (_rowSerial == 72) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Исследование Русской Арктики'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1205,7 +1214,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Исследование Русской Арктики";
         _data2 = _data;
     }
-    if (_rowSerial == 72) {
+    if (_rowSerial == 73) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Исторические события'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1213,7 +1222,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Исторические события";
         _data2 = _data;
     }
-    if (_rowSerial == 73) {
+    if (_rowSerial == 74) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'История денежного обращения России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1221,7 +1230,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"История денежного обращения России";
         _data2 = _data;
     }
-    if (_rowSerial == 74) {
+    if (_rowSerial == 75) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'История русского военно-морского флота'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1230,7 +1239,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"История русского военно-морского флота";
         _data2 = _data;
     }
-    if (_rowSerial == 75) {
+    if (_rowSerial == 76) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'История русской авиации'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1238,7 +1247,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"История русской авиации";
         _data2 = _data;
     }
-    if (_rowSerial == 76) {
+    if (_rowSerial == 77) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'К 300-летию добровольного вхождения Хакасии в РФ'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1246,7 +1255,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"К 300-летию добровольного вхождения Хакасии в РФ";
         _data2 = _data;
     }
-    if (_rowSerial == 77) {
+    if (_rowSerial == 78) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'К 350-летию добровольного вхождения Бурятии в состав РФ'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1254,7 +1263,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"К 350-летию добровольного вхождения Бурятии в состав РФ";
         _data2 = _data;
     }
-    if (_rowSerial == 78) {
+    if (_rowSerial == 79) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'К 400-летию добровольного вхождения калмыцкого народа в состав РФ'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1262,7 +1271,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"К 400-летию добровольного вхождения калмыцкого народа в состав РФ";
         _data2 = _data;
     }
-    if (_rowSerial == 79) {
+    if (_rowSerial == 80) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'К 450-летию добровольного вхождения Башкирии в РФ'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1270,7 +1279,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"К 450-летию добровольного вхождения Башкирии в РФ";
         _data2 = _data;
     }
-    if (_rowSerial == 80) {
+    if (_rowSerial == 81) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'К 450-летию добровольного вхождения Удмуртии в РФ'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1278,7 +1287,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"К 450-летию добровольного вхождения Удмуртии в РФ";
         _data2 = _data;
     }
-    if (_rowSerial == 81) {
+    if (_rowSerial == 82) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Красная книга'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1288,15 +1297,15 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Красная книга";
         _data2 = _data;
     }
-    if (_rowSerial == 82) {
+    if (_rowSerial == 83) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Космос'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2021",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",nil];
         _titleSeries.text = @"Космос";
         _data2 = _data;
     }
-    if (_rowSerial == 83) {
+    if (_rowSerial == 84) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Кубок мира по спортивной ходьбе'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1304,15 +1313,15 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Кубок мира по спортивной ходьбе";
         _data2 = _data;
     }
-    if (_rowSerial == 84) {
+    if (_rowSerial == 85) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Легенды и сказки народов России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2020",@"2019",@"2017",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2020",@"2019",@"2017",nil];
         _titleSeries.text = @"Легенды и сказки народов России";
         _data2 = _data;
     }
-    if (_rowSerial == 85) {
+    if (_rowSerial == 86) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Легенды и сказки стран ЕврАзЭС'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1320,7 +1329,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Легенды и сказки стран ЕврАзЭС";
         _data2 = _data;
     }
-    if (_rowSerial == 86) {
+    if (_rowSerial == 87) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Лунный календарь'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1328,7 +1337,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Лунный календарь";
         _data2 = _data;
     }
-    if (_rowSerial == 87) {
+    if (_rowSerial == 88) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Международная монетная программа стран ЕврАзЭС'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1336,7 +1345,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Международная монетная программа стран ЕврАзЭС";
         _data2 = _data;
     }
-    if (_rowSerial == 88) {
+    if (_rowSerial == 89) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'На страже Отечества'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1344,7 +1353,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"На страже Отечества";
         _data2 = _data;
     }
-    if (_rowSerial == 89) {
+    if (_rowSerial == 90) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Окно в Европу'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1352,7 +1361,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Окно в Европу";
         _data2 = _data;
     }
-    if (_rowSerial == 90) {
+    if (_rowSerial == 91) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Олимпийский век России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1360,7 +1369,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Олимпийский век России";
         _data2 = _data;
     }
-    if (_rowSerial == 91) {
+    if (_rowSerial == 92) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Оружие Великой Победы (конструкторы оружия)'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1368,7 +1377,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Оружие Великой Победы (конструкторы оружия)";
         _data2 = _data;
     }
-    if (_rowSerial == 92) {
+    if (_rowSerial == 93) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Освоение и исследование Сибири, XVI-XVII вв.'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1376,17 +1385,17 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Освоение и исследование Сибири, XVI-XVII вв.";
         _data2 = _data;
     }
-    if (_rowSerial == 93) {
+    if (_rowSerial == 94) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Памятники архитектуры России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005",@"2004",@"2003",@"2002",@"2000",@"1999",@"1998",@"1997",
+        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005",@"2004",@"2003",@"2002",@"2000",@"1999",@"1998",@"1997",
                      @"1996",@"1995",@"1994",@"1993",nil];
         _betabet = [[NSArray alloc]initWithObjects:@"3 рубля",@"25 рублей", nil];
         _titleSeries.text = @"Памятники архитектуры России";
         _data2 = _data;
     }
-    if (_rowSerial == 94) {
+    if (_rowSerial == 95) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Победa в ВОВ 1941-1945'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1394,7 +1403,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Победa в ВОВ 1941-1945 гг.";
         _data2 = _data;
     }
-    if (_rowSerial == 95) {
+    if (_rowSerial == 96) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Первая русская антарктическая экспедиция'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1402,7 +1411,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Первая русская антарктическая экспедиция";
         _data2 = _data;
     }
-    if (_rowSerial == 96) {
+    if (_rowSerial == 97) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Первое русское кругосветное путешествие'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1410,7 +1419,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Первое русское кругосветное путешествие";
         _data2 = _data;
     }
-    if (_rowSerial == 97) {
+    if (_rowSerial == 98) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Подвиг советских воинов, Крым, ВОВ 1941-1945 гг.'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1418,7 +1427,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Подвиг советских воинов, Крым, ВОВ 1941-1945 гг.";
         _data2 = _data;
     }
-    if (_rowSerial == 98) {
+    if (_rowSerial == 99) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Полководцы и герои ОВ 1812 года'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1426,7 +1435,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Полководцы и герои ОВ 1812 года";
         _data2 = _data;
     }
-    if (_rowSerial == 99) {
+    if (_rowSerial == 100) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Российская Федерация'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1434,7 +1443,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Российская Федерация";
         _data2 = _data;
     }
-    if (_rowSerial == 100) {
+    if (_rowSerial == 101) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Российская (советская) мультипликация'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1443,7 +1452,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Российская (советская) мультипликация";
         _data2 = _data;
     }
-    if (_rowSerial == 101) {
+    if (_rowSerial == 102) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Россия во всемирном наследии ЮНЕСКО'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1452,7 +1461,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Россия во всемирном наследии ЮНЕСКО";
         _data2 = _data;
     }
-    if (_rowSerial == 102) {
+    if (_rowSerial == 103) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Россия на рубеже тысячелетий'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1460,7 +1469,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Россия на рубеже тысячелетий";
         _data2 = _data;
     }
-    if (_rowSerial == 103) {
+    if (_rowSerial == 104) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Русские исследователи Центральной Азии'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1468,7 +1477,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Русские исследователи Центральной Азии";
         _data2 = _data;
     }
-    if (_rowSerial == 104) {
+    if (_rowSerial == 105) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Русский балет'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1477,7 +1486,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Русский балет";
         _data2 = _data;
     }
-    if (_rowSerial == 105) {
+    if (_rowSerial == 106) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Самбо'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1485,7 +1494,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Самбо";
         _data2 = _data;
     }
-    if (_rowSerial == 106) {
+    if (_rowSerial == 107) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Сбербанк 170 лет'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1493,7 +1502,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Сбербанк 170 лет";
         _data2 = _data;
     }
-    if (_rowSerial == 107) {
+    if (_rowSerial == 108) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Символы России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1501,7 +1510,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Символы России";
         _data2 = _data;
     }
-    if (_rowSerial == 108) {
+    if (_rowSerial == 109) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Сокровищница мировой культуры'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1509,7 +1518,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Сокровищница мировой культуры";
         _data2 = _data;
     }
-    if (_rowSerial == 109) {
+    if (_rowSerial == 110) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Сохраним наш мир'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1518,7 +1527,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Сохраним наш мир";
         _data2 = _data;
     }
-    if (_rowSerial == 110) {
+    if (_rowSerial == 111) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Сочи 2014'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1527,7 +1536,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Сочи 2014";
         _data2 = _data;
     }
-    if (_rowSerial == 111) {
+    if (_rowSerial == 112) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Спорт'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1536,7 +1545,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Спорт";
         _data2 = _data;
     }
-    if (_rowSerial == 112) {
+    if (_rowSerial == 113) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Сражения и знаменательные события 1812 года'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1544,7 +1553,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Сражения и знам. события ОВ 1812 года";
         _data2 = _data;
     }
-    if (_rowSerial == 113) {
+    if (_rowSerial == 114) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Столицы стран - членов ЕврАзЭС'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1552,7 +1561,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Столицы стран - членов ЕврАзЭС";
         _data2 = _data;
     }
-    if (_rowSerial == 114) {
+    if (_rowSerial == 115) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Феофан Грек'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1560,7 +1569,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Феофан Грек";
         _data2 = _data;
     }
-    if (_rowSerial == 115) {
+    if (_rowSerial == 116) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Универсиада 2013 года в Казани'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1568,7 +1577,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Универсиада 2013 года в г. Казани";
         _data2 = _data;
     }
-    if (_rowSerial == 116) {
+    if (_rowSerial == 117) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Человек труда'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1576,7 +1585,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Человек труда";
         _data2 = _data;
     }
-    if (_rowSerial == 117) {
+    if (_rowSerial == 118) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Чемпионат мира по футболу FIFA 2018 в России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1585,7 +1594,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Чемпионат мира по футболу FIFA 2018 в России";
         _data2 = _data;
     }
-    if (_rowSerial == 118) {
+    if (_rowSerial == 119) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Экспедиции Г.И. Невельского на Дальний Восток'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1593,7 +1602,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Экспедиции Г.И. Невельского на Дальний Восток";
         _data2 = _data;
     }
-    if (_rowSerial == 119) {
+    if (_rowSerial == 120) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Эпоха просвещения. XVIII век'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
@@ -1601,7 +1610,7 @@ didStartElement:(NSString *)elementName
         _titleSeries.text = @"Эпоха просвещения. XVIII век";
         _data2 = _data;
     }
-    if (_rowSerial == 120) {
+    if (_rowSerial == 121) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Ювелирное искусство в России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;

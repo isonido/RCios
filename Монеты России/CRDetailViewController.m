@@ -505,191 +505,194 @@ static NSString* Still = @"still";
     if ([_detail.serial  isEqual: @"Герои ВОВ 1941–1945 гг."]) {
         [userDefaults setInteger:58 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Города, освобожденные советскими войсками от немецко-фашистских захватчиков"]) {
+    if ([_detail.serial  isEqual: @"Города"]) {
         [userDefaults setInteger:59 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Города воинской славы"]) {
+    if ([_detail.serial  isEqual: @"Города, освобожденные советскими войсками от немецко-фашистских захватчиков"]) {
         [userDefaults setInteger:60 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Города трудовой доблести"]) {
+    if ([_detail.serial  isEqual: @"Города воинской славы"]) {
         [userDefaults setInteger:61 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Дзюдо"]) {
+    if ([_detail.serial  isEqual: @"Города трудовой доблести"]) {
         [userDefaults setInteger:62 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Дионисий"]) {
+    if ([_detail.serial  isEqual: @"Дзюдо"]) {
         [userDefaults setInteger:63 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Древние города России"]) {
+    if ([_detail.serial  isEqual: @"Дионисий"]) {
         [userDefaults setInteger:64 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Животный мир стран ЕврАзЭС"]) {
+    if ([_detail.serial  isEqual: @"Древние города России"]) {
         [userDefaults setInteger:65 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Зимние виды спорта"]) {
+    if ([_detail.serial  isEqual: @"Животный мир стран ЕврАзЭС"]) {
         [userDefaults setInteger:66 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Зимние Олимпийские игры 1998 года"]) {
+    if ([_detail.serial  isEqual: @"Зимние виды спорта"]) {
         [userDefaults setInteger:67 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Знаки зодиака"]) {
+    if ([_detail.serial  isEqual: @"Зимние Олимпийские игры 1998 года"]) {
         [userDefaults setInteger:68 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Золотое кольцо"]) {
+    if ([_detail.serial  isEqual: @"Знаки зодиака"]) {
         [userDefaults setInteger:69 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Инвестиционная монета"]) {
+    if ([_detail.serial  isEqual: @"Золотое кольцо"]) {
         [userDefaults setInteger:70 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Исследование Русской Арктики"]) {
+    if ([_detail.serial  isEqual: @"Инвестиционная монета"]) {
         [userDefaults setInteger:71 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Исторические события"]) {
+    if ([_detail.serial  isEqual: @"Исследование Русской Арктики"]) {
         [userDefaults setInteger:72 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"История денежного обращения России"]) {
+    if ([_detail.serial  isEqual: @"Исторические события"]) {
         [userDefaults setInteger:73 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"История русского военно-морского флота"]) {
+    if ([_detail.serial  isEqual: @"История денежного обращения России"]) {
         [userDefaults setInteger:74 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"История русской авиации"]) {
+    if ([_detail.serial  isEqual: @"История русского военно-морского флота"]) {
         [userDefaults setInteger:75 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"К 300-летию добровольного вхождения Хакасии в РФ"]) {
+    if ([_detail.serial  isEqual: @"История русской авиации"]) {
         [userDefaults setInteger:76 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"К 350-летию добровольного вхождения Бурятии в состав РФ"]) {
+    if ([_detail.serial  isEqual: @"К 300-летию добровольного вхождения Хакасии в РФ"]) {
         [userDefaults setInteger:77 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"К 400-летию добровольного вхождения калмыцкого народа в состав РФ"]) {
+    if ([_detail.serial  isEqual: @"К 350-летию добровольного вхождения Бурятии в состав РФ"]) {
         [userDefaults setInteger:78 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"К 450-летию добровольного вхождения Башкирии в РФ"]) {
+    if ([_detail.serial  isEqual: @"К 400-летию добровольного вхождения калмыцкого народа в состав РФ"]) {
         [userDefaults setInteger:79 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"К 450-летию добровольного вхождения Удмуртии в РФ"]) {
+    if ([_detail.serial  isEqual: @"К 450-летию добровольного вхождения Башкирии в РФ"]) {
         [userDefaults setInteger:80 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Красная книга"]) {
+    if ([_detail.serial  isEqual: @"К 450-летию добровольного вхождения Удмуртии в РФ"]) {
         [userDefaults setInteger:81 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Космос"]) {
+    if ([_detail.serial  isEqual: @"Красная книга"]) {
         [userDefaults setInteger:82 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Кубок мира по спортивной ходьбе"]) {
+    if ([_detail.serial  isEqual: @"Космос"]) {
         [userDefaults setInteger:83 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Легенды и сказки народов России"]) {
+    if ([_detail.serial  isEqual: @"Кубок мира по спортивной ходьбе"]) {
         [userDefaults setInteger:84 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Легенды и сказки стран ЕврАзЭС"]) {
+    if ([_detail.serial  isEqual: @"Легенды и сказки народов России"]) {
         [userDefaults setInteger:85 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Лунный календарь"]) {
+    if ([_detail.serial  isEqual: @"Легенды и сказки стран ЕврАзЭС"]) {
         [userDefaults setInteger:86 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Международная монетная программа стран ЕврАзЭС"]) {
+    if ([_detail.serial  isEqual: @"Лунный календарь"]) {
         [userDefaults setInteger:87 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"На страже Отечества"]) {
+    if ([_detail.serial  isEqual: @"Международная монетная программа стран ЕврАзЭС"]) {
         [userDefaults setInteger:88 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Окно в Европу"]) {
+    if ([_detail.serial  isEqual: @"На страже Отечества"]) {
         [userDefaults setInteger:89 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Олимпийский век России"]) {
+    if ([_detail.serial  isEqual: @"Окно в Европу"]) {
         [userDefaults setInteger:90 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Оружие Великой Победы (конструкторы оружия)"]) {
+    if ([_detail.serial  isEqual: @"Олимпийский век России"]) {
         [userDefaults setInteger:91 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Освоение и исследование Сибири, XVI-XVII вв."]) {
+    if ([_detail.serial  isEqual: @"Оружие Великой Победы (конструкторы оружия)"]) {
         [userDefaults setInteger:92 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Памятники архитектуры России"]) {
+    if ([_detail.serial  isEqual: @"Освоение и исследование Сибири, XVI-XVII вв."]) {
         [userDefaults setInteger:93 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Победa в ВОВ 1941-1945"]) {
+    if ([_detail.serial  isEqual: @"Памятники архитектуры России"]) {
         [userDefaults setInteger:94 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Первая русская антарктическая экспедиция"]) {
+    if ([_detail.serial  isEqual: @"Победa в ВОВ 1941-1945"]) {
         [userDefaults setInteger:95 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Первое русское кругосветное путешествие"]) {
+    if ([_detail.serial  isEqual: @"Первая русская антарктическая экспедиция"]) {
         [userDefaults setInteger:96 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Подвиг советских воинов, Крым, ВОВ 1941-1945 гг."]) {
+    if ([_detail.serial  isEqual: @"Первое русское кругосветное путешествие"]) {
         [userDefaults setInteger:97 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Полководцы и герои ОВ 1812 года"]) {
+    if ([_detail.serial  isEqual: @"Подвиг советских воинов, Крым, ВОВ 1941-1945 гг."]) {
         [userDefaults setInteger:98 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Российская Федерация"]) {
+    if ([_detail.serial  isEqual: @"Полководцы и герои ОВ 1812 года"]) {
         [userDefaults setInteger:99 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Российская (советская) мультипликация"]) {
+    if ([_detail.serial  isEqual: @"Российская Федерация"]) {
         [userDefaults setInteger:100 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Россия во всемирном наследии ЮНЕСКО"]) {
+    if ([_detail.serial  isEqual: @"Российская (советская) мультипликация"]) {
         [userDefaults setInteger:101 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Россия на рубеже тысячелетий"]) {
+    if ([_detail.serial  isEqual: @"Россия во всемирном наследии ЮНЕСКО"]) {
         [userDefaults setInteger:102 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Русские исследователи Центральной Азии"]) {
+    if ([_detail.serial  isEqual: @"Россия на рубеже тысячелетий"]) {
         [userDefaults setInteger:103 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Русский балет"]) {
+    if ([_detail.serial  isEqual: @"Русские исследователи Центральной Азии"]) {
         [userDefaults setInteger:104 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Самбо"]) {
+    if ([_detail.serial  isEqual: @"Русский балет"]) {
         [userDefaults setInteger:105 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Сбербанк 170 лет"]) {
+    if ([_detail.serial  isEqual: @"Самбо"]) {
         [userDefaults setInteger:106 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Символы России"]) {
+    if ([_detail.serial  isEqual: @"Сбербанк 170 лет"]) {
         [userDefaults setInteger:107 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Сокровищница мировой культуры"]) {
+    if ([_detail.serial  isEqual: @"Символы России"]) {
         [userDefaults setInteger:108 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Сохраним наш мир"]) {
+    if ([_detail.serial  isEqual: @"Сокровищница мировой культуры"]) {
         [userDefaults setInteger:109 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Сочи 2014"]) {
+    if ([_detail.serial  isEqual: @"Сохраним наш мир"]) {
         [userDefaults setInteger:110 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Спорт"]) {
+    if ([_detail.serial  isEqual: @"Сочи 2014"]) {
         [userDefaults setInteger:111 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Сражения и знаменательные события 1812 года"]) {
+    if ([_detail.serial  isEqual: @"Спорт"]) {
         [userDefaults setInteger:112 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Столицы стран - членов ЕврАзЭС"]) {
+    if ([_detail.serial  isEqual: @"Сражения и знаменательные события 1812 года"]) {
         [userDefaults setInteger:113 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Феофан Грек"]) {
+    if ([_detail.serial  isEqual: @"Столицы стран - членов ЕврАзЭС"]) {
         [userDefaults setInteger:114 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Универсиада 2013 года в Казани"]) {
+    if ([_detail.serial  isEqual: @"Феофан Грек"]) {
         [userDefaults setInteger:115 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Человек труда"]) {
+    if ([_detail.serial  isEqual: @"Универсиада 2013 года в Казани"]) {
         [userDefaults setInteger:116 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Чемпионат мира по футболу FIFA 2018 в России"]) {
+    if ([_detail.serial  isEqual: @"Человек труда"]) {
         [userDefaults setInteger:117 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Экспедиции Г.И. Невельского на Дальний Восток"]) {
+    if ([_detail.serial  isEqual: @"Чемпионат мира по футболу FIFA 2018 в России"]) {
         [userDefaults setInteger:118 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Эпоха просвещения. XVIII век"]) {
+    if ([_detail.serial  isEqual: @"Экспедиции Г.И. Невельского на Дальний Восток"]) {
         [userDefaults setInteger:119 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Ювелирное искусство в России"]) {
+    if ([_detail.serial  isEqual: @"Эпоха просвещения. XVIII век"]) {
         [userDefaults setInteger:120 forKey:Serial];
+    }
+    if ([_detail.serial  isEqual: @"Ювелирное искусство в России"]) {
+        [userDefaults setInteger:121 forKey:Serial];
     }
 
     [[NSNotificationCenter defaultCenter] postNotificationName:Serial object:nil];

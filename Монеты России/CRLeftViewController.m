@@ -124,68 +124,69 @@ static NSString* Serial = @"serial";
                        @"Выдающиеся полководцы России", // - 56
                        @"Выдающиеся спортсмены России", // - 57
                        @"Герои ВОВ 1941–1945 гг.", //-58
-                       @"Города, освобожденные советскими войсками от немецко-фашистских захватчиков", // - 59
-                       @"Города воинской славы", // - 60
-                       @"Города трудовой доблести", // - 61
-                       @"Дзюдо", // - 62
-                       @"Дионисий", // - 63
-                       @"Древние города России", // - 64
-                       @"Животный мир стран ЕврАзЭС", // - 65
-                       @"Зимние виды спорта", // - 66
-                       @"Зимние Олимпийские игры 1998 года", // - 67
-                       @"Знаки зодиака", // - 68
-                       @"Золотое кольцо", // - 69
-                       @"Инвестиционная монета", // - 70
-                       @"Исследование Русской Арктики", // - 71
-                       @"Исторические события", // - 72
-                       @"История денежного обращения России", // - 73
-                       @"История русского военно-морского флота", // - 74
-                       @"История русской авиации", // - 75
-                       @"К 300-летию добровольного вхождения Хакасии в РФ", // - 76
-                       @"К 350-летию добровольного вхождения Бурятии в состав РФ", // - 77
-                       @"К 400-летию добровольного вхождения калмыцкого народа в состав РФ", // - 78
-                       @"К 450-летию добровольного вхождения Башкирии в РФ", // - 79
-                       @"К 450-летию добровольного вхождения Удмуртии в РФ", // - 80
-                       @"Красная книга", // - 81
-                       @"Космос", // - 82
-                       @"Кубок мира по спортивной ходьбе", // - 83
-                       @"Легенды и сказки народов России", // - 84
-                       @"Легенды и сказки стран ЕврАзЭС", // - 85
-                       @"Лунный календарь", // - 86
-                       @"Международная монетная программа стран ЕврАзЭС", // - 87
-                       @"На страже Отечества", // - 88
-                       @"Окно в Европу", // - 89
-                       @"Олимпийский век России", // - 90
-                       @"Оружие Великой Победы (конструкторы оружия)", // - 91
-                       @"Освоение и исследование Сибири, XVI-XVII вв.", // - 92
-                       @"Памятники архитектуры России", // - 93
-                       @"Победa в ВОВ 1941-1945 гг.", // - 94
-                       @"Первая русская антарктическая экспедиция", // - 95
-                       @"Первое русское кругосветное путешествие", // - 96
-                       @"Подвиг советских воинов, Крым, ВОВ 1941-1945 гг.", // - 97
-                       @"Полководцы и герои ОВ 1812 года", // - 98
-                       @"Российская Федерация", // - 99
-                       @"Российская (советская) мультипликация", // - 100
-                       @"Россия во всемирном наследии ЮНЕСКО", // - 101
-                       @"Россия на рубеже тысячелетий", // - 102
-                       @"Русские исследователи Центральной Азии", // - 103
-                       @"Русский балет", // - 104
-                       @"Самбо", // - 105
-                       @"Сбербанк 170 лет", // - 106
-                       @"Символы России", // - 107
-                       @"Сокровищница мировой культуры", // - 108
-                       @"Сохраним наш мир", // - 109
-                       @"Сочи 2014", // - 110
-                       @"Спорт", // - 111
-                       @"Сражения и знам. события ОВ 1812 года", // - 112
-                       @"Столицы стран - членов ЕврАзЭС", // - 113
-                       @"Феофан Грек", // - 114
-                       @"Универсиада 2013 года в г. Казани", // - 115
-                       @"Человек труда", // - 116
-                       @"Чемпионат мира по футболу FIFA 2018 в России",// - 117
-                       @"Экспедиции Г.И. Невельского на Дальний Восток", // - 118
-                       @"Эпоха просвещения. XVIII век", // - 119
-                       @"Ювелирное искусство в России", // - 120
+                       @"Города", //-59
+                       @"Города, освобожденные советскими войсками от немецко-фашистских захватчиков", // - 60
+                       @"Города воинской славы", // - 61
+                       @"Города трудовой доблести", // - 62
+                       @"Дзюдо", // - 63
+                       @"Дионисий", // - 64
+                       @"Древние города России", // - 65
+                       @"Животный мир стран ЕврАзЭС", // - 66
+                       @"Зимние виды спорта", // - 67
+                       @"Зимние Олимпийские игры 1998 года", // - 68
+                       @"Знаки зодиака", // - 69
+                       @"Золотое кольцо", // - 70
+                       @"Инвестиционная монета", // - 71
+                       @"Исследование Русской Арктики", // - 72
+                       @"Исторические события", // - 73
+                       @"История денежного обращения России", // - 74
+                       @"История русского военно-морского флота", // - 75
+                       @"История русской авиации", // - 76
+                       @"К 300-летию добровольного вхождения Хакасии в РФ", // - 77
+                       @"К 350-летию добровольного вхождения Бурятии в состав РФ", // - 78
+                       @"К 400-летию добровольного вхождения калмыцкого народа в состав РФ", // - 79
+                       @"К 450-летию добровольного вхождения Башкирии в РФ", // - 80
+                       @"К 450-летию добровольного вхождения Удмуртии в РФ", // - 81
+                       @"Красная книга", // - 82
+                       @"Космос", // - 83
+                       @"Кубок мира по спортивной ходьбе", // - 84
+                       @"Легенды и сказки народов России", // - 85
+                       @"Легенды и сказки стран ЕврАзЭС", // - 86
+                       @"Лунный календарь", // - 87
+                       @"Международная монетная программа стран ЕврАзЭС", // - 88
+                       @"На страже Отечества", // - 89
+                       @"Окно в Европу", // - 90
+                       @"Олимпийский век России", // - 91
+                       @"Оружие Великой Победы (конструкторы оружия)", // - 92
+                       @"Освоение и исследование Сибири, XVI-XVII вв.", // - 93
+                       @"Памятники архитектуры России", // - 94
+                       @"Победa в ВОВ 1941-1945 гг.", // - 95
+                       @"Первая русская антарктическая экспедиция", // - 96
+                       @"Первое русское кругосветное путешествие", // - 97
+                       @"Подвиг советских воинов, Крым, ВОВ 1941-1945 гг.", // - 98
+                       @"Полководцы и герои ОВ 1812 года", // - 99
+                       @"Российская Федерация", // - 100
+                       @"Российская (советская) мультипликация", // - 101
+                       @"Россия во всемирном наследии ЮНЕСКО", // - 102
+                       @"Россия на рубеже тысячелетий", // - 103
+                       @"Русские исследователи Центральной Азии", // - 104
+                       @"Русский балет", // - 105
+                       @"Самбо", // - 106
+                       @"Сбербанк 170 лет", // - 107
+                       @"Символы России", // - 108
+                       @"Сокровищница мировой культуры", // - 109
+                       @"Сохраним наш мир", // - 110
+                       @"Сочи 2014", // - 111
+                       @"Спорт", // - 112
+                       @"Сражения и знам. события ОВ 1812 года", // - 113
+                       @"Столицы стран - членов ЕврАзЭС", // - 114
+                       @"Феофан Грек", // - 115
+                       @"Универсиада 2013 года в г. Казани", // - 116
+                       @"Человек труда", // - 117
+                       @"Чемпионат мира по футболу FIFA 2018 в России",// - 118
+                       @"Экспедиции Г.И. Невельского на Дальний Восток", // - 119
+                       @"Эпоха просвещения. XVIII век", // - 120
+                       @"Ювелирное искусство в России", // - 121
                        nil];
     [self updateStillSegment];
 }
@@ -638,6 +639,14 @@ static NSString* Serial = @"serial";
         [self updateStillSegment];
     }
     if (_rowSerial == 59) {
+        self.dataNominal = [NSArray arrayWithObjects:@"Все",@"3 рубля",@"50 рублей", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2023",@"2022",@"2021", nil];
+        _stillSegmentControl.selectedSegmentIndex = 0;
+        _stillSegmentControl.enabled = NO;
+        [userDefaults setInteger:0 forKey:Still];
+        [self updateStillSegment];
+    }
+    if (_rowSerial == 60) {
         self.dataNominal = [NSArray arrayWithObjects:@"5 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2016", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -645,7 +654,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 60) {
+    if (_rowSerial == 61) {
         self.dataNominal = [NSArray arrayWithObjects:@"10 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -653,7 +662,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 61) {
+    if (_rowSerial == 62) {
         self.dataNominal = [NSArray arrayWithObjects:@"10 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2022",@"2021", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -661,7 +670,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 62) {
+    if (_rowSerial == 63) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2014", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -669,7 +678,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 63) {
+    if (_rowSerial == 64) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2002", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -677,7 +686,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 64) {
+    if (_rowSerial == 65) {
         self.dataNominal = [NSArray arrayWithObjects:@"10 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2022",@"2020",@"2019",@"2018",@"2017",@"2016",@"2014",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",
                          @"2006",@"2005",@"2004",@"2003",@"2002", nil];
@@ -686,7 +695,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 65) {
+    if (_rowSerial == 66) {
         self.dataNominal = [NSArray arrayWithObjects:@"3 рубля", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2009", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -694,7 +703,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 66) {
+    if (_rowSerial == 67) {
         self.dataNominal = [NSArray arrayWithObjects:@"200 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2010",@"2009", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -702,7 +711,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 67) {
+    if (_rowSerial == 68) {
         self.dataNominal = [NSArray arrayWithObjects:@"1 рубль", nil];
         self.dataYear = [NSArray arrayWithObjects:@"1997", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -710,7 +719,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 68) {
+    if (_rowSerial == 69) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"2 рубля",@"3 рубля",@"25 рублей",@"50 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2005",@"2004",@"2003",@"2002", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -718,7 +727,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 69) {
+    if (_rowSerial == 70) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"5 рублей",@"100 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2008",@"2006",@"2004", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -726,7 +735,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 70) {
+    if (_rowSerial == 71) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"3 рубля",@"10 рублей",@"25 рублей",@"50 рублей",@"100 рублей",@"200 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2010",@"2009",@"2008",@"2007",@"2006",@"1995",@"1976", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -734,7 +743,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 71) {
+    if (_rowSerial == 72) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"1995", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -742,7 +751,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 72) {
+    if (_rowSerial == 73) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2022",@"2021", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -750,7 +759,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 73) {
+    if (_rowSerial == 74) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2009", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -758,7 +767,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 74) {
+    if (_rowSerial == 75) {
         self.dataNominal = [NSArray arrayWithObjects:@"1000 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2012",@"2010", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -766,7 +775,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 75) {
+    if (_rowSerial == 76) {
         self.dataNominal = [NSArray arrayWithObjects:@"1 рубль", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2016",@"2014",@"2013",@"2012",@"2011",@"2010", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -774,17 +783,9 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 76) {
-        self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"2007", nil];
-        _stillSegmentControl.selectedSegmentIndex = 0;
-        _stillSegmentControl.enabled = NO;
-        [userDefaults setInteger:0 forKey:Still];
-        [self updateStillSegment];
-    }
     if (_rowSerial == 77) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"2011", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"2007", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
         _stillSegmentControl.enabled = NO;
         [userDefaults setInteger:0 forKey:Still];
@@ -792,7 +793,7 @@ static NSString* Serial = @"serial";
     }
     if (_rowSerial == 78) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"2009", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"2011", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
         _stillSegmentControl.enabled = NO;
         [userDefaults setInteger:0 forKey:Still];
@@ -800,7 +801,7 @@ static NSString* Serial = @"serial";
     }
     if (_rowSerial == 79) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"2007", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"2009", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
         _stillSegmentControl.enabled = NO;
         [userDefaults setInteger:0 forKey:Still];
@@ -808,27 +809,13 @@ static NSString* Serial = @"serial";
     }
     if (_rowSerial == 80) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"2008", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"2007", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
         _stillSegmentControl.enabled = NO;
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
     if (_rowSerial == 81) {
-        self.dataNominal = [NSArray arrayWithObjects:@"Все",@"1 рубль",@"2 рубля",@"10 рублей",@"50 рублей", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2019",@"2016",@"2014",@"2012",@"2010",@"2008",@"2007",@"2006",@"2005",@"2004",
-                         @"2003",@"2002",@"2001",@"2000",@"1999",@"1998",@"1997",@"1996",@"1995",@"1994",@"1993",@"1992", nil];
-        _stillSegmentControl.enabled = YES;
-    }
-    if (_rowSerial == 82) {
-        self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"2022",@"2021", nil];
-        _stillSegmentControl.selectedSegmentIndex = 0;
-        _stillSegmentControl.enabled = NO;
-        [userDefaults setInteger:0 forKey:Still];
-        [self updateStillSegment];
-    }
-    if (_rowSerial == 83) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2008", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -836,12 +823,34 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 84) {
-        self.dataNominal = [NSArray arrayWithObjects:@"3 рубля", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2020",@"2019",@"2017", nil];
+    if (_rowSerial == 82) {
+        self.dataNominal = [NSArray arrayWithObjects:@"Все",@"1 рубль",@"2 рубля",@"10 рублей",@"50 рублей", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2019",@"2016",@"2014",@"2012",@"2010",@"2008",@"2007",@"2006",@"2005",@"2004",
+                         @"2003",@"2002",@"2001",@"2000",@"1999",@"1998",@"1997",@"1996",@"1995",@"1994",@"1993",@"1992", nil];
         _stillSegmentControl.enabled = YES;
     }
+    if (_rowSerial == 83) {
+        self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"2023",@"2022",@"2021", nil];
+        _stillSegmentControl.selectedSegmentIndex = 0;
+        _stillSegmentControl.enabled = NO;
+        [userDefaults setInteger:0 forKey:Still];
+        [self updateStillSegment];
+    }
+    if (_rowSerial == 84) {
+        self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"2008", nil];
+        _stillSegmentControl.selectedSegmentIndex = 0;
+        _stillSegmentControl.enabled = NO;
+        [userDefaults setInteger:0 forKey:Still];
+        [self updateStillSegment];
+    }
     if (_rowSerial == 85) {
+        self.dataNominal = [NSArray arrayWithObjects:@"3 рубля", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2022",@"2020",@"2019",@"2017", nil];
+        _stillSegmentControl.enabled = YES;
+    }
+    if (_rowSerial == 86) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2009", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -849,7 +858,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 86) {
+    if (_rowSerial == 87) {
         self.dataNominal = [NSArray arrayWithObjects:@"3 рубля", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005",@"2004",@"2003", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -857,7 +866,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 87) {
+    if (_rowSerial == 88) {
         self.dataNominal = [NSArray arrayWithObjects:@"3 рубля", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2012",@"2011",@"2010", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -865,7 +874,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 88) {
+    if (_rowSerial == 89) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2018", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -873,7 +882,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 89) {
+    if (_rowSerial == 90) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2003", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -881,7 +890,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 90) {
+    if (_rowSerial == 91) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"1993", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -889,7 +898,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 91) {
+    if (_rowSerial == 92) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2020",@"2019", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -898,7 +907,7 @@ static NSString* Serial = @"serial";
         [self updateStillSegment];
     }
     
-    if (_rowSerial == 92) {
+    if (_rowSerial == 93) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2001", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -906,25 +915,17 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 93) {
+    if (_rowSerial == 94) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"3 рубля",@"25 рублей", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005",@"2004",@"2003",@"2002",@"2000",@"1999",@"1998",@"1997",
+        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005",@"2004",@"2003",@"2002",@"2000",@"1999",@"1998",@"1997",
                          @"1996",@"1995",@"1994",@"1993", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
         _stillSegmentControl.enabled = NO;;
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 94) {
-        self.dataNominal = [NSArray arrayWithObjects:@"3 рубля", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"1994", nil];
-        _stillSegmentControl.selectedSegmentIndex = 0;
-        _stillSegmentControl.enabled = NO;
-        [userDefaults setInteger:0 forKey:Still];
-        [self updateStillSegment];
-    }
     if (_rowSerial == 95) {
-        self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
+        self.dataNominal = [NSArray arrayWithObjects:@"3 рубля", nil];
         self.dataYear = [NSArray arrayWithObjects:@"1994", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
         _stillSegmentControl.enabled = NO;
@@ -933,13 +934,21 @@ static NSString* Serial = @"serial";
     }
     if (_rowSerial == 96) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"1993", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"1994", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
         _stillSegmentControl.enabled = NO;
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
     if (_rowSerial == 97) {
+        self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"1993", nil];
+        _stillSegmentControl.selectedSegmentIndex = 0;
+        _stillSegmentControl.enabled = NO;
+        [userDefaults setInteger:0 forKey:Still];
+        [self updateStillSegment];
+    }
+    if (_rowSerial == 98) {
         self.dataNominal = [NSArray arrayWithObjects:@"5 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2015", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -947,7 +956,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 98) {
+    if (_rowSerial == 99) {
         self.dataNominal = [NSArray arrayWithObjects:@"2 рубля", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2012", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -955,7 +964,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 99) {
+    if (_rowSerial == 100) {
         self.dataNominal = [NSArray arrayWithObjects:@"10 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2022",@"2021",@"2019",@"2018",@"2016",@"2014",@"2013",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -963,12 +972,12 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 100) {
+    if (_rowSerial == 101) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"3 рубля",@"25 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017", nil];
         _stillSegmentControl.enabled = YES;
     }
-    if (_rowSerial == 101) {
+    if (_rowSerial == 102) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"3 рубля",@"25 рублей",@"50 рублей",@"100 рублей",@"200 рублей",@"1000 рублей",@"10 000 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2016",@"2010",@"2009",@"2008",@"2006", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -976,7 +985,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 102) {
+    if (_rowSerial == 103) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2000", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -984,7 +993,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 103) {
+    if (_rowSerial == 104) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"1999", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -992,7 +1001,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 104) {
+    if (_rowSerial == 105) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"3 рубля",@"5 рублей",@"10 рублей",@"25 рублей",@"50 рублей",@"100 рублей",@"150 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"1999",@"1997",@"1996",@"1995",@"1994",@"1993", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1000,7 +1009,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 105) {
+    if (_rowSerial == 106) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2013", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1008,7 +1017,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 106) {
+    if (_rowSerial == 107) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2012",@"2011", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1016,7 +1025,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 107) {
+    if (_rowSerial == 108) {
         self.dataNominal = [NSArray arrayWithObjects:@"3 рубля", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2015", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1024,7 +1033,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 108) {
+    if (_rowSerial == 109) {
         self.dataNominal = [NSArray arrayWithObjects:@"25 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2018",@"2016",@"2015",@"2013", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1032,7 +1041,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 109) {
+    if (_rowSerial == 110) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"3 рубля",@"25 рублей",@"50 рублей",@"100 рублей",@"200 рублей",@"10 000 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2020",@"2015",@"2011",@"2008",@"2004",@"2000",@"1997",@"1996",@"1995",@"1994",@"1993", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1040,12 +1049,12 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 110) {
+    if (_rowSerial == 111) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"3 рубля",@"25 рублей",@"50 рублей",@"100 рублей",@"200 рублей",@"1000 рублей",@"10 000 рублей",@"25 000 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2013",@"2012",@"2011", nil];
         _stillSegmentControl.enabled = YES;
     }
-    if (_rowSerial == 111) {
+    if (_rowSerial == 112) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"3 рубля",@"50 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2006",@"2005",@"2004", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1053,7 +1062,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 112) {
+    if (_rowSerial == 113) {
         self.dataNominal = [NSArray arrayWithObjects:@"5 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2012", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1061,7 +1070,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 113) {
+    if (_rowSerial == 114) {
         self.dataNominal = [NSArray arrayWithObjects:@"3 рубля", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2008", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1069,7 +1078,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 114) {
+    if (_rowSerial == 115) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2004", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1077,22 +1086,22 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 115) {
+    if (_rowSerial == 116) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2013", nil];
         _stillSegmentControl.enabled = YES;
     }
-    if (_rowSerial == 116) {
+    if (_rowSerial == 117) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2022",@"2021",@"2020", nil];
         _stillSegmentControl.enabled = YES;
     }
-    if (_rowSerial == 117) {
+    if (_rowSerial == 118) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"3 рубля",@"25 рублей",@"50 рублей", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2017", nil];
         _stillSegmentControl.enabled = YES;
     }
-    if (_rowSerial == 118) {
+    if (_rowSerial == 119) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"2013", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1100,7 +1109,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 119) {
+    if (_rowSerial == 120) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"1992", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
@@ -1108,7 +1117,7 @@ static NSString* Serial = @"serial";
         [userDefaults setInteger:0 forKey:Still];
         [self updateStillSegment];
     }
-    if (_rowSerial == 120) {
+    if (_rowSerial == 121) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все", nil];
         self.dataYear = [NSArray arrayWithObjects:@"Все",@"2019",@"2016", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
