@@ -1124,7 +1124,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Города трудовой доблести'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2021",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",nil];
         _titleSeries.text = @"Города трудовой доблести";
         _data2 = _data;
     }
@@ -1218,7 +1218,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Исторические события'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2021",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",nil];
         _titleSeries.text = @"Исторические события";
         _data2 = _data;
     }
@@ -1447,7 +1447,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Российская (советская) мультипликация'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",nil];
         _betabet = [[NSArray alloc]initWithObjects:@"3 рубля",@"25 рублей", nil];
         _titleSeries.text = @"Российская (советская) мультипликация";
         _data2 = _data;
