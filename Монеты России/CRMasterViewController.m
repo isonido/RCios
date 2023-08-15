@@ -1148,7 +1148,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Древние города России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2020",@"2019",@"2018",@"2017",@"2016",@"2014",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",
+        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2020",@"2019",@"2018",@"2017",@"2016",@"2014",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",
                      @"2006",@"2005",@"2004",@"2003",@"2002",nil];
         _titleSeries.text = @"Древние города России";
         _data2 = _data;
@@ -1581,7 +1581,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Человек труда'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2022",@"2021",@"2020",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",@"2020",nil];
         _titleSeries.text = @"Человек труда";
         _data2 = _data;
     }
