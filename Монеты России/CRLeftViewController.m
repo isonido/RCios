@@ -966,7 +966,7 @@ static NSString* Serial = @"serial";
     }
     if (_rowSerial == 100) {
         self.dataNominal = [NSArray arrayWithObjects:@"10 рублей", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2022",@"2021",@"2019",@"2018",@"2016",@"2014",@"2013",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2023",@"2022",@"2021",@"2019",@"2018",@"2016",@"2014",@"2013",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
         _stillSegmentControl.enabled = NO;
         [userDefaults setInteger:0 forKey:Still];
@@ -1043,7 +1043,7 @@ static NSString* Serial = @"serial";
     }
     if (_rowSerial == 110) {
         self.dataNominal = [NSArray arrayWithObjects:@"Все",@"3 рубля",@"25 рублей",@"50 рублей",@"100 рублей",@"200 рублей",@"10 000 рублей", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2020",@"2015",@"2011",@"2008",@"2004",@"2000",@"1997",@"1996",@"1995",@"1994",@"1993", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2023",@"2020",@"2015",@"2011",@"2008",@"2004",@"2000",@"1997",@"1996",@"1995",@"1994",@"1993", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
         _stillSegmentControl.enabled = NO;
         [userDefaults setInteger:0 forKey:Still];
