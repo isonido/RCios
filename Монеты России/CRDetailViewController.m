@@ -634,65 +634,68 @@ static NSString* Still = @"still";
     if ([_detail.serial  isEqual: @"Российская (советская) мультипликация"]) {
         [userDefaults setInteger:101 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Россия во всемирном наследии ЮНЕСКО"]) {
+    if ([_detail.serial  isEqual: @"Российский спорт"]) {
         [userDefaults setInteger:102 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Россия на рубеже тысячелетий"]) {
+    if ([_detail.serial  isEqual: @"Россия во всемирном наследии ЮНЕСКО"]) {
         [userDefaults setInteger:103 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Русские исследователи Центральной Азии"]) {
+    if ([_detail.serial  isEqual: @"Россия на рубеже тысячелетий"]) {
         [userDefaults setInteger:104 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Русский балет"]) {
+    if ([_detail.serial  isEqual: @"Русские исследователи Центральной Азии"]) {
         [userDefaults setInteger:105 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Самбо"]) {
+    if ([_detail.serial  isEqual: @"Русский балет"]) {
         [userDefaults setInteger:106 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Сбербанк 170 лет"]) {
+    if ([_detail.serial  isEqual: @"Самбо"]) {
         [userDefaults setInteger:107 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Символы России"]) {
+    if ([_detail.serial  isEqual: @"Сбербанк 170 лет"]) {
         [userDefaults setInteger:108 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Сокровищница мировой культуры"]) {
+    if ([_detail.serial  isEqual: @"Символы России"]) {
         [userDefaults setInteger:109 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Сохраним наш мир"]) {
+    if ([_detail.serial  isEqual: @"Сокровищница мировой культуры"]) {
         [userDefaults setInteger:110 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Сочи 2014"]) {
+    if ([_detail.serial  isEqual: @"Сохраним наш мир"]) {
         [userDefaults setInteger:111 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Спорт"]) {
+    if ([_detail.serial  isEqual: @"Сочи 2014"]) {
         [userDefaults setInteger:112 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Сражения и знаменательные события 1812 года"]) {
+    if ([_detail.serial  isEqual: @"Спорт"]) {
         [userDefaults setInteger:113 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Столицы стран - членов ЕврАзЭС"]) {
+    if ([_detail.serial  isEqual: @"Сражения и знаменательные события 1812 года"]) {
         [userDefaults setInteger:114 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Феофан Грек"]) {
+    if ([_detail.serial  isEqual: @"Столицы стран - членов ЕврАзЭС"]) {
         [userDefaults setInteger:115 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Универсиада 2013 года в Казани"]) {
+    if ([_detail.serial  isEqual: @"Феофан Грек"]) {
         [userDefaults setInteger:116 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Человек труда"]) {
+    if ([_detail.serial  isEqual: @"Универсиада 2013 года в Казани"]) {
         [userDefaults setInteger:117 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Чемпионат мира по футболу FIFA 2018 в России"]) {
+    if ([_detail.serial  isEqual: @"Человек труда"]) {
         [userDefaults setInteger:118 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Экспедиции Г.И. Невельского на Дальний Восток"]) {
+    if ([_detail.serial  isEqual: @"Чемпионат мира по футболу FIFA 2018 в России"]) {
         [userDefaults setInteger:119 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Эпоха просвещения. XVIII век"]) {
+    if ([_detail.serial  isEqual: @"Экспедиции Г.И. Невельского на Дальний Восток"]) {
         [userDefaults setInteger:120 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Ювелирное искусство в России"]) {
+    if ([_detail.serial  isEqual: @"Эпоха просвещения. XVIII век"]) {
         [userDefaults setInteger:121 forKey:Serial];
+    }
+    if ([_detail.serial  isEqual: @"Ювелирное искусство в России"]) {
+        [userDefaults setInteger:122 forKey:Serial];
     }
 
     [[NSNotificationCenter defaultCenter] postNotificationName:Serial object:nil];
