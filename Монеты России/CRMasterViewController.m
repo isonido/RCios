@@ -265,7 +265,7 @@ NSXMLParser *rssParser3;
                                                        message:@"Реальные цены покупки и продажи"
                                                       delegate:self
                                              cancelButtonTitle:@"Позже"
-                                             otherButtonTitles:@"Сейчас"];
+                                             otherButtonTitles:@"Сейчас", nil];
     subAlert.alertViewStyle = UIAlertViewStyleDefault;
     [subAlert setValue:imageView forKey:@"accessoryView"];
     
@@ -623,7 +623,7 @@ didStartElement:(NSString *)elementName
     
     if (_rowSerial == 0) {
         _data = [CRData fetchData];
-        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",
                      @"2006",@"2005",@"2004",@"2003",@"2002",@"2001",@"2000",@"1999",
                      @"1998",@"1997",@"1996",@"1995",@"1994",@"1993",@"1992",@"1976",nil];
         
@@ -1070,7 +1070,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Вооруженные Силы РФ'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2021",@"2019",@"2017",@"2015",@"2011",@"2010",@"2009",@"2007",@"2006",@"2005",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2021",@"2019",@"2017",@"2015",@"2011",@"2010",@"2009",@"2007",@"2006",@"2005",nil];
         _titleSeries.text = @"Вооруженные Силы РФ";
         _data2 = _data;
     }
@@ -1234,7 +1234,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Исторические события'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",nil];
         _titleSeries.text = @"Исторические события";
         _data2 = _data;
     }
@@ -1405,7 +1405,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Памятники архитектуры России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005",@"2004",@"2003",@"2002",@"2000",@"1999",@"1998",@"1997",
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005",@"2004",@"2003",@"2002",@"2000",@"1999",@"1998",@"1997",
                      @"1996",@"1995",@"1994",@"1993",nil];
         _betabet = [[NSArray alloc]initWithObjects:@"3 рубля",@"25 рублей", nil];
         _titleSeries.text = @"Памятники архитектуры России";
@@ -1455,7 +1455,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Российская Федерация'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",@"2019",@"2018",@"2016",@"2014",@"2013",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",@"2019",@"2018",@"2016",@"2014",@"2013",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005",nil];
         _titleSeries.text = @"Российская Федерация";
         _data2 = _data;
     }
