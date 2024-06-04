@@ -665,7 +665,7 @@ static NSString* Serial = @"serial";
     }
     if (_rowSerial == 62) {
         self.dataNominal = [NSArray arrayWithObjects:@"10 рублей", nil];
-        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2023",@"2022",@"2021", nil];
+        self.dataYear = [NSArray arrayWithObjects:@"Все",@"2024",@"2023",@"2022",@"2021", nil];
         _stillSegmentControl.selectedSegmentIndex = 0;
         _stillSegmentControl.enabled = NO;
         [userDefaults setInteger:0 forKey:Still];

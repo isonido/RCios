@@ -1140,7 +1140,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Города трудовой доблести'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",nil];
         _titleSeries.text = @"Города трудовой доблести";
         _data2 = _data;
     }
