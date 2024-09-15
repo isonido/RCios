@@ -68,7 +68,7 @@ NSXMLParser *rssParser3;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     SWRevealViewController *revealController = [self revealViewController];
     [revealController panGestureRecognizer];
     [revealController tapGestureRecognizer];
@@ -91,33 +91,33 @@ NSXMLParser *rssParser3;
     
     NSDictionary *barButtonAppearanceDict = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:14.0]};
     [_rightbutton setTitleTextAttributes:barButtonAppearanceDict forState:UIControlStateNormal];
-
+    
     NSUbiquitousKeyValueStore* cloudUser = [NSUbiquitousKeyValueStore defaultStore];
     _dataUser2 = [[cloudUser arrayForKey:@"AVAILABLE_NOTES"] mutableCopy];
     [cloudUser synchronize];
-
+    
     if (_dataUser == _dataUser2) {
-     nil;
-     } else {
-         id token = [[NSFileManager defaultManager] ubiquityIdentityToken];
-         if (token == nil)
-         {
-             nil;
-             // iCloud is not available for this app
-         } else {
-             NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
-             [userDefaults setObject:_dataUser2 forKey:Diccoins];
-             [userDefaults synchronize];
-             [self.tableView reloadData];
-         }
-     }
+        nil;
+    } else {
+        id token = [[NSFileManager defaultManager] ubiquityIdentityToken];
+        if (token == nil)
+        {
+            nil;
+            // iCloud is not available for this app
+        } else {
+            NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
+            [userDefaults setObject:_dataUser2 forKey:Diccoins];
+            [userDefaults synchronize];
+            [self.tableView reloadData];
+        }
+    }
     
     self.searchController = [[UISearchController alloc]initWithSearchResultsController:nil];
     self.searchController.searchResultsUpdater = self;
     self.searchController.delegate = self;
     self.searchController.dimsBackgroundDuringPresentation = NO;
     searchController.definesPresentationContext = true;
-
+    
     [self.tableView setTableHeaderView:self.searchController.searchBar];
     self.definesPresentationContext = YES;
     
@@ -134,7 +134,6 @@ NSXMLParser *rssParser3;
     arrayInvest = [[NSArray alloc] initWithArray:[NSArray arrayWithObjects:@"5216-0060",@"5216-0060-1",@"5216-0060-2",@"5216-0060-4",@"5111-0178",
                                                   @"3213-0003",@"5111-0033",@"5217-0038",@"5216-0080",@"5217-0041",@"5216-0095",@"5217-0040",@"5216-0089",nil]];
     
-    //button.frame = CGRectMake(60.0f, 11.0f, 200.0f, 22.0f);
     if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ){
         CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
         CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
@@ -148,10 +147,10 @@ NSXMLParser *rssParser3;
         } else if ( screenHeight > 480 && screenHeight < 736 ){
             if (@available(iOS 11, *)) {
                 dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:32 paddingLeft:20 paddingRight:227 refView:button animation:BOTH openAnimationDuration:0
-                closeAnimationDuration:0];
+                                                closeAnimationDuration:0];
             } else {
                 dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:32 paddingLeft:90 paddingRight:187 refView:button animation:BOTH openAnimationDuration:0
-                closeAnimationDuration:0];
+                                                closeAnimationDuration:0];
             }
             dropDownView.delegate = self;
             //NSLog(@"iPhone 8");
@@ -180,12 +179,12 @@ NSXMLParser *rssParser3;
     button.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 10);
     
     self.detailViewController = (CRDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    [self dataChange];
-    [self firstLoad];
-
+    //[self dataChange];
+    //[self firstLoad];
+    
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     NSURL *url = [NSURL URLWithString:@"https://www.ricgold.com/_xml"];
-
+    
     NSURLRequest *theRequest=[NSURLRequest requestWithURL:url
                                               cachePolicy:NSURLRequestUseProtocolCachePolicy
                                           timeoutInterval:60.0];
@@ -197,20 +196,20 @@ NSXMLParser *rssParser3;
     [request setHTTPMethod:@"GET"];
     [request addValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
     [request addValue:@"text/plain" forHTTPHeaderField:@"Accept"];
-
-        NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-        [[session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    [[session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         NSString *requestReply = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
         NSData * responseData = [requestReply dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
         NSLog(@"requestReply: %@", responseData);
-            self.rssData = [NSMutableData data];
-            self.rssData = [NSMutableData dataWithData:responseData];
+        self.rssData = [NSMutableData data];
+        self.rssData = [NSMutableData dataWithData:responseData];
     }] resume];
     
     self.rssData2 = [NSMutableData data];
     self.rssData3 = [NSMutableData data];
-
+    
     if (!_dataZakaz|(_dataZakaz.count == 0)) {
         [_basketImage setImage:[UIImage imageNamed:@"basketEmpty.png"] forState:UIControlStateNormal];
     } else {
@@ -230,7 +229,7 @@ NSXMLParser *rssParser3;
             {
                 screenHeight = screenWidth;
             }
-
+            
             CGRect myImageRect = CGRectMake(0.0f, 0.0f, screenWidth, screenHeight);
             _myImage = [[UIImageView alloc] initWithFrame:myImageRect];
             _myImage.image = [UIImage imageNamed:@"fonInfo6plus.png"];
@@ -245,7 +244,8 @@ NSXMLParser *rssParser3;
     _emailRic.text = @"www.ricgold.com@yandex.ru";
     
     [NSTimer scheduledTimerWithTimeInterval:5.0f target:self selector:@selector(updateLabel:) userInfo:nil repeats:YES];
-    [NSTimer scheduledTimerWithTimeInterval:60*60.0f target:self selector:@selector(refresh:) userInfo:nil repeats:YES];
+    //[NSTimer scheduledTimerWithTimeInterval:60*60.0f target:self selector:@selector(refresh:) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:8 target:self selector:@selector(refresh:) userInfo:nil repeats:NO];
     
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"LaunchedCoins"]) {
         [NSTimer scheduledTimerWithTimeInterval:40 target:self selector:@selector(displayAlert:) userInfo:nil repeats:NO];
@@ -254,6 +254,9 @@ NSXMLParser *rssParser3;
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"LaunchedBannerNew"]) {
         [NSTimer scheduledTimerWithTimeInterval:2*60*60 target:self selector:@selector(bannernew:) userInfo:nil repeats:NO];
     }
+    
+    [self dataChange];
+    [self firstLoad];
 }
 
 - (void)displayAlert:(NSTimer *) timer {
@@ -270,6 +273,10 @@ NSXMLParser *rssParser3;
     [subAlert setValue:imageView forKey:@"accessoryView"];
     
     [subAlert show];
+}
+
+- (void)updatePrise:(NSTimer *) timer {
+    //[self refresh:(id)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -1078,7 +1085,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Выдающиеся личности России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",
                      @"2008",@"2007",@"2006",@"2005",@"2004",@"2003",@"2002",@"2001",@"2000",@"1999",@"1998",
                      @"1997",@"1996",@"1995",@"1994",@"1993",nil];
         _betabet = [[NSArray alloc]initWithObjects:@"1 рубль",@"2 рубля", nil];
@@ -1115,7 +1122,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Города'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",nil];
         _betabet = [[NSArray alloc]initWithObjects:@"3 рубля",@"50 рублей", nil];
         _titleSeries.text = @"Города";
         _data2 = _data;
@@ -1164,7 +1171,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Древние города России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2020",@"2019",@"2018",@"2017",@"2016",@"2014",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2020",@"2019",@"2018",@"2017",@"2016",@"2014",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",
                      @"2006",@"2005",@"2004",@"2003",@"2002",nil];
         _titleSeries.text = @"Древние города России";
         _data2 = _data;
@@ -1307,7 +1314,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Красная книга'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2019",@"2016",@"2014",@"2012",@"2010",@"2008",@"2007",@"2006",@"2005",@"2004",
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2019",@"2016",@"2014",@"2012",@"2010",@"2008",@"2007",@"2006",@"2005",@"2004",
                      @"2003",@"2002",@"2001",@"2000",@"1999",@"1998",@"1997",@"1996",@"1995",@"1994",@"1993",@"1992",nil];
         _betabet = [[NSArray alloc]initWithObjects:@"1 рубль",@"2 рубля",@"10 рублей",@"50 рублей", nil];
         _titleSeries.text = @"Красная книга";
@@ -1472,7 +1479,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Российский спорт'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2023",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",nil];
         _betabet = [[NSArray alloc]initWithObjects:@"1 рубль", nil];
         _titleSeries.text = @"Российский спорт";
         _data2 = _data;
@@ -1606,7 +1613,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Человек труда'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2023",@"2022",@"2021",@"2020",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",@"2020",nil];
         _titleSeries.text = @"Человек труда";
         _data2 = _data;
     }
@@ -2297,7 +2304,6 @@ didStartElement:(NSString *)elementName
 }
 
 - (IBAction)refresh:(id)sender {
-    //NSLog(@"REFRESH");
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     NSURL *url = [NSURL URLWithString:@"https://www.ricgold.com/_xml/"];
 
