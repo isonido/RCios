@@ -84,28 +84,52 @@
 }
 
 - (IBAction)tel1:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://79263067474"]];
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://79263067474"]];
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    NSURL *URL = [NSURL URLWithString:@"tel://79263067474"];
+    [application openURL:URL options:@{} completionHandler:nil];
 }
 
 - (IBAction)tel2:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://79853442627"]];
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://79853442627"]];
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    NSURL *URL = [NSURL URLWithString:@"telprompt://79853442627"];
+    [application openURL:URL options:@{} completionHandler:nil];
 }
 
 - (IBAction)vykup:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.ricgold.com"]];
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.ricgold.com"]];
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    NSURL *URL = [NSURL URLWithString:@"http://ricgold.com"];
+    [application openURL:URL options:@{} completionHandler:nil];
 }
 
 - (IBAction)pribor:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.ricgold.com"]];
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.ricgold.com"]];
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    NSURL *URL = [NSURL URLWithString:@"http://ricgold.com"];
+    [application openURL:URL options:@{} completionHandler:nil];
 }
 
 - (IBAction)site:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ricgold.com"]];
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ricgold.com"]];
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    NSURL *URL = [NSURL URLWithString:@"http://ricgold.com"];
+    [application openURL:URL options:@{} completionHandler:nil];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://74957758299"]];
+        //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://74957758299"]];
+        
+        UIApplication *application = [UIApplication sharedApplication];
+        NSURL *URL = [NSURL URLWithString:@"telprompt://74957758299"];
+        [application openURL:URL options:@{} completionHandler:nil];
     }
 }
 

@@ -1232,16 +1232,11 @@ static NSString* Serial = @"serial";
 }
 
 - (IBAction)online:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ricgold.com"]];
-    /**
-    UIAlertView *subAlert2 = [[UIAlertView alloc] initWithTitle:@"Уважаемые покупатели"
-                                                       message:@"Для оплаты картой и доставкой курьером Вам необходимо положить монеты в корзину и указать свой актуальный номер телефона. С Вами свяжется менеджер и сообщит код для онлайн оплаты"
-                                                      delegate:self
-                                             cancelButtonTitle:@"ОК"
-                                             otherButtonTitles:nil];
-    subAlert2.alertViewStyle = UIAlertViewStyleDefault;
-    [subAlert2 show];
-     */
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ricgold.com"]];
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    NSURL *URL = [NSURL URLWithString:@"http://ricgold.com"];
+    [application openURL:URL options:@{} completionHandler:nil];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView

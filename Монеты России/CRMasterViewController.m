@@ -540,7 +540,11 @@ didStartElement:(NSString *)elementName
     [_x removeFromSuperview];
     [_iknow removeFromSuperview];
     
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ricgold.com"]];
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ricgold.com"]];
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    NSURL *URL = [NSURL URLWithString:@"http://ricgold.com"];
+    [application openURL:URL options:@{} completionHandler:nil];
 }
 
 - (void) moviePlayerPlaybackDidFinish:(NSNotification *)notification
@@ -2238,9 +2242,11 @@ didStartElement:(NSString *)elementName
         [self loadSettings];
     }
     if (returnIndex == 4) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ricgold.com"]];
-        //_dropdown = 4;
-        //[self loadSettings];
+        //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ricgold.com"]];
+        
+        UIApplication *application = [UIApplication sharedApplication];
+        NSURL *URL = [NSURL URLWithString:@"http://ricgold.com"];
+        [application openURL:URL options:@{} completionHandler:nil];
     }
     if (returnIndex == 5) {
         [self performSegueWithIdentifier:@"shopseg" sender:nil];
@@ -2295,8 +2301,12 @@ didStartElement:(NSString *)elementName
         }
     } else {
         if (buttonIndex == 1) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ricgold.com"]];
-            //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/app/blabla/id1198257212?action=write-review"]];
+           // [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ricgold.com"]];
+            
+            UIApplication *application = [UIApplication sharedApplication];
+            NSURL *URL = [NSURL URLWithString:@"http://ricgold.com"];
+            [application openURL:URL options:@{} completionHandler:nil];
+            
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"LaunchedCoins"];
             [[NSUserDefaults standardUserDefaults] synchronize];
         }
