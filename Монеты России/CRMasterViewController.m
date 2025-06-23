@@ -248,7 +248,7 @@ NSXMLParser *rssParser3;
     [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(refresh:) userInfo:nil repeats:NO];
     
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"LaunchedCoins"]) {
-        [NSTimer scheduledTimerWithTimeInterval:40 target:self selector:@selector(displayAlert:) userInfo:nil repeats:NO];
+        [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(displayAlert:) userInfo:nil repeats:NO];
     }
     
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"LaunchedBannerNew"]) {
@@ -260,15 +260,15 @@ NSXMLParser *rssParser3;
 }
 
 - (void)displayAlert:(NSTimer *) timer {
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 1200, 400)];
-    UIImage *wonImage = [UIImage imageNamed:@"coinsban-2.png"];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 1200, 200)];
+    UIImage *wonImage = [UIImage imageNamed:@"coinsban-1.png"];
     imageView.contentMode=UIViewContentModeScaleAspectFit;
     [imageView setImage:wonImage];
-    UIAlertView *subAlert = [[UIAlertView alloc] initWithTitle:@"Больше монет на www.ricgold.com"
+    UIAlertView *subAlert = [[UIAlertView alloc] initWithTitle:@"Я знаю о магазине www.ricgold.com"
                                                        message:@"Реальные цены покупки и продажи"
                                                       delegate:self
                                              cancelButtonTitle:@"Позже"
-                                             otherButtonTitles:@"Сейчас", nil];
+                                             otherButtonTitles:@"Перейти", nil];
     subAlert.alertViewStyle = UIAlertViewStyleDefault;
     [subAlert setValue:imageView forKey:@"accessoryView"];
     
@@ -634,7 +634,7 @@ didStartElement:(NSString *)elementName
     
     if (_rowSerial == 0) {
         _data = [CRData fetchData];
-        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",
+        _alphabet = [[NSArray alloc]initWithObjects:@"2025",@"2024",@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",@"2008",@"2007",
                      @"2006",@"2005",@"2004",@"2003",@"2002",@"2001",@"2000",@"1999",
                      @"1998",@"1997",@"1996",@"1995",@"1994",@"1993",@"1992",@"1976",nil];
         
@@ -1089,7 +1089,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Выдающиеся личности России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",
+        _alphabet = [[NSArray alloc]initWithObjects:@"2025",@"2024",@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2012",@"2011",@"2010",@"2009",
                      @"2008",@"2007",@"2006",@"2005",@"2004",@"2003",@"2002",@"2001",@"2000",@"1999",@"1998",
                      @"1997",@"1996",@"1995",@"1994",@"1993",nil];
         _betabet = [[NSArray alloc]initWithObjects:@"1 рубль",@"2 рубля", nil];
@@ -1118,7 +1118,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Герои ВОВ 1941–1945 гг.'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2022",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2025",@"2022",nil];
         _titleSeries.text = @"Герои ВОВ 1941–1945 гг.";
         _data2 = _data;
     }
@@ -1151,7 +1151,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Города трудовой доблести'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2025",@"2024",@"2023",@"2022",@"2021",nil];
         _titleSeries.text = @"Города трудовой доблести";
         _data2 = _data;
     }
@@ -1228,7 +1228,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Инвестиционная монета'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2010",@"2009",@"2008",@"2007",@"2006",@"1995",@"1976",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2025",@"2024",@"2023",@"2022",@"2021",@"2020",@"2019",@"2018",@"2017",@"2016",@"2015",@"2014",@"2013",@"2010",@"2009",@"2008",@"2007",@"2006",@"1995",@"1976",nil];
         _betabet = [[NSArray alloc]initWithObjects:@"3 рубля",@"10 рублей",@"25 рублей",@"50 рублей",@"100 рублей",@"200 рублей", nil];
         _titleSeries.text = @"Инвестиционная монета";
         _data2 = _data;
@@ -1245,7 +1245,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Исторические события'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2025",@"2024",@"2023",@"2022",@"2021",nil];
         _titleSeries.text = @"Исторические события";
         _data2 = _data;
     }
@@ -1647,6 +1647,14 @@ didStartElement:(NSString *)elementName
         _data2 = _data;
     }
     if (_rowSerial == 122) {
+        NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Юбилей Победы советского народа в ВОВ 1941–1945 гг.'"];
+        NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
+        _data = serialResult;
+        _alphabet = [[NSArray alloc]initWithObjects:@"2025",nil];
+        _titleSeries.text = @"Юбилей Победы советского народа в ВОВ 1941–1945 гг.";
+        _data2 = _data;
+    }
+    if (_rowSerial == 123) {
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Ювелирное искусство в России'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;

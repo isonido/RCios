@@ -694,8 +694,11 @@ static NSString* Still = @"still";
     if ([_detail.serial  isEqual: @"Эпоха просвещения. XVIII век"]) {
         [userDefaults setInteger:121 forKey:Serial];
     }
-    if ([_detail.serial  isEqual: @"Ювелирное искусство в России"]) {
+    if ([_detail.serial  isEqual: @"Юбилей Победы советского народа в ВОВ 1941–1945 гг."]) {
         [userDefaults setInteger:122 forKey:Serial];
+    }
+    if ([_detail.serial  isEqual: @"Ювелирное искусство в России"]) {
+        [userDefaults setInteger:123 forKey:Serial];
     }
 
     [[NSNotificationCenter defaultCenter] postNotificationName:Serial object:nil];
