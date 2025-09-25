@@ -135,6 +135,7 @@ NSXMLParser *rssParser3;
                                                   @"3213-0003",@"5111-0033",@"5217-0038",@"5216-0080",@"5217-0041",@"5216-0095",@"5217-0040",@"5216-0089",nil]];
     
     if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ){
+        NSLog(@"This iPhone up");
         CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
         CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
         if( screenHeight < screenWidth ){
@@ -143,7 +144,7 @@ NSXMLParser *rssParser3;
         if( screenHeight > 480 && screenHeight < 667 ){
             dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:32 paddingLeft:60 paddingRight:132 refView:button animation:BOTH openAnimationDuration:0 closeAnimationDuration:0];
             dropDownView.delegate = self;
-            //NSLog(@"iPhone 5/5s");
+            NSLog(@"iPhone 5/5s");
         } else if ( screenHeight > 480 && screenHeight < 736 ){
             if (@available(iOS 11, *)) {
                 dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:32 paddingLeft:20 paddingRight:227 refView:button animation:BOTH openAnimationDuration:0
@@ -153,23 +154,20 @@ NSXMLParser *rssParser3;
                                                 closeAnimationDuration:0];
             }
             dropDownView.delegate = self;
-            //NSLog(@"iPhone 8");
+            NSLog(@"iPhone 8");
         } else if ( screenHeight > 480 ){
-            if (@available(iOS 11, *)) {
-                dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:52 paddingLeft:20 paddingRight:245 refView:button animation:BOTH openAnimationDuration:0 closeAnimationDuration:0];
-            } else {
-                dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:32 paddingLeft:110 paddingRight:225 refView:button animation:BOTH openAnimationDuration:0 closeAnimationDuration:0];
-            }
+            dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:80 paddingLeft:0 paddingRight:320 refView:button animation:BOTH openAnimationDuration:0 closeAnimationDuration:0];
             dropDownView.delegate = self;
-            //NSLog(@"iPhone 8 Plus");
+            NSLog(@"iPhone 8 Plus");
         } else {
             dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:32 paddingLeft:60 paddingRight:132 refView:button animation:BOTH openAnimationDuration:0 closeAnimationDuration:0];
             dropDownView.delegate = self;
-            //NSLog(@"iPhone 4/4s");
+            NSLog(@"iPhone 4/4s");
         }
     } else {
-        dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:32 paddingLeft:60 paddingRight:120 refView:button animation:BOTH openAnimationDuration:0 closeAnimationDuration:0];
+        dropDownView = [[DropDownView alloc] initWithArrayData:arrayData cellHeight:40 heightTableView:240 paddingTop:32 paddingLeft:20 paddingRight:190 refView:button animation:BOTH openAnimationDuration:0 closeAnimationDuration:0];
         dropDownView.delegate = self;
+        NSLog(@"This iPhone down2");
     }
     
     [self.navigationController.view addSubview:dropDownView.view];
@@ -1126,8 +1124,8 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Города'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",nil];
-        _betabet = [[NSArray alloc]initWithObjects:@"3 рубля",@"50 рублей", nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2025",@"2024",@"2023",@"2022",@"2021",nil];
+        _betabet = [[NSArray alloc]initWithObjects:@"3 рубля",@"50 рублей",@"100 рублей", nil];
         _titleSeries.text = @"Города";
         _data2 = _data;
     }
@@ -1466,7 +1464,7 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Российская Федерация'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",@"2022",@"2021",@"2019",@"2018",@"2016",@"2014",@"2013",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005",nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2025",@"2024",@"2023",@"2022",@"2021",@"2019",@"2018",@"2016",@"2014",@"2013",@"2011",@"2010",@"2009",@"2008",@"2007",@"2006",@"2005",nil];
         _titleSeries.text = @"Российская Федерация";
         _data2 = _data;
     }
@@ -1483,8 +1481,8 @@ didStartElement:(NSString *)elementName
         NSPredicate* serial = [NSPredicate predicateWithFormat:@"serial == 'Российский спорт'"];
         NSArray *serialResult = [[CRData fetchData] filteredArrayUsingPredicate:serial];
         _data = serialResult;
-        _alphabet = [[NSArray alloc]initWithObjects:@"2024",@"2023",nil];
-        _betabet = [[NSArray alloc]initWithObjects:@"1 рубль", nil];
+        _alphabet = [[NSArray alloc]initWithObjects:@"2025",@"2024",@"2023",nil];
+        _betabet = [[NSArray alloc]initWithObjects:@"1 рубль",@"3 рубля",@"25 рублей", nil];
         _titleSeries.text = @"Российский спорт";
         _data2 = _data;
     }

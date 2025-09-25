@@ -100,11 +100,9 @@ static NSString* Still = @"still";
     _basketAddAlert.hidden = YES;
     
     if (!_dataZakaz|(_dataZakaz.count == 0)) {
-        //[_basketImage setImage:[UIImage imageNamed:@"basketEmpty.png"] forState:UIControlStateNormal];
-        _basketImage.image = [UIImage imageNamed:@"basketEmpty.png"];
+        _basketImage.image = [UIImage imageNamed:@"basketEmpty2.png"];
     } else {
-        //[_basketImage setImage:[UIImage imageNamed:@"basketFull.png"] forState:UIControlStateNormal];
-        _basketImage.image = [UIImage imageNamed:@"basketFull.png"];
+        _basketImage.image = [UIImage imageNamed:@"basketFull2.png"];
     }
     [self reloadData];
     if (!_dataZakaz|(_dataZakaz.count == 0)) {
@@ -171,9 +169,6 @@ static NSString* Still = @"still";
     if([coinres count] > 0) {
         _zakaz.hidden = NO;
         NSDictionary *newsItem = [coinres objectAtIndex:0];
-        //NSMutableString *resultfin = [NSMutableString stringWithFormat:@"%@ ₽", [newsItem objectForKey:@"price"]];
-        //[resultfin replaceOccurrencesOfString:@"\n\t\t\t\t\t" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, resultfin.length)];
-        //_priceric.text = resultfin;
         NSMutableString *resultfin = [NSMutableString stringWithFormat:@"%@", [newsItem objectForKey:@"price"]];
         [resultfin replaceOccurrencesOfString:@"\n" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, resultfin.length)];
         NSString *string2 = [NSString stringWithFormat:@"%@ ₽", [numberFormatter stringForObjectValue:[numberFormatter numberFromString:resultfin]]];
@@ -218,11 +213,9 @@ static NSString* Still = @"still";
     [userDefaults synchronize];
     
     if (!_dataZakaz|(_dataZakaz.count == 0)) {
-        //[_basketImage setImage:[UIImage imageNamed:@"basketEmpty.png"] forState:UIControlStateNormal];
-        _basketImage.image = [UIImage imageNamed:@"basketEmpty.png"];
+        _basketImage.image = [UIImage imageNamed:@"basketEmpty2.png"];
     } else {
-        //[_basketImage setImage:[UIImage imageNamed:@"basketFull.png"] forState:UIControlStateNormal];
-        _basketImage.image = [UIImage imageNamed:@"basketFull.png"];
+        _basketImage.image = [UIImage imageNamed:@"basketFull2.png"];
     }
     
     if ([_dataZakaz containsObject:_detail.id]) {
